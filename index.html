@@ -3,29 +3,23 @@
 
 <head>
     <link type="text/css" rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="main.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="masonry.pkgd.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <title>Html Page</title>
-
     <script>
-        $(".id").imagesLoaded(function () {
-            $('.id').masonry({
-                itemSelector: '.scrapcontent',
-                columnWidth: 3,
-                isAnimated: true,
-                animationOptions: {
-                    duration: 700,
-                    easing: 'linear',
-                    queue: false
-                }
+        $(document).ready(function () {
+            // init Masonry
+            var $grid = $('.grid').masonry({
+                // options...
             });
-        }
+        });
     </script>
 </head>
 
 <body>
     <h1>Hello World my first Heading</h1>
-    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 78 }'>
+    <div class="grid">
         <div class="grid-item">
             <p id="firstP">new my first paragraf</p>
             <p>This is more text</p>
