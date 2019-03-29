@@ -11,12 +11,18 @@ q {
 }
 
 div {
-    float: left;
+    /* float: left; */
     background-color: #9bc1bc;
     width: 200px;
     padding: 10px;
     border-radius: 10px;
     margin: 5px;
+}
+
+.grid {
+    width: 98%;
+    background: transparent;
+    padding: 0px;
 }
 
 body {
@@ -99,12 +105,16 @@ table, th, td {
 
 #divWithArticleTable {
     width: 50%;
-    min-width: 550px;
+    min-width: 430px;
 }
 
 #divWithArticleTable img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 280px;
+    width: 200px;
+}
+
+.filler {
+    /* background-color: #8d6e63; */
 }
