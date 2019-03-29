@@ -1,0 +1,110 @@
+h1 {
+    color: #8d6e63;
+}
+
+p {
+    color: #8d6e63;
+}
+
+q {
+    color: darkred;
+}
+
+div {
+    float: left;
+    background-color: #9bc1bc;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+body {
+    background-color: rgb(235, 230, 182);
+}
+
+mark {
+    background: ghostwhite;
+}
+
+#firstP {
+    color: darkblue;
+}
+
+address {
+    font-size: 12px;
+}
+
+img {
+    width: 200px;
+}
+
+#javascript {
+   text-align: left;
+   float: right;
+}
+
+#javascript img {
+    float: left;
+    margin-right: 10px;
+    width: 40%;
+}
+
+#float2 {
+    text-align: right;
+    float: left;
+    color: darkslategrey;
+}
+
+#float2 img {
+    float: right;
+    margin-left: 10px;
+    width: 40%;
+}
+
+.javaScriptInfo {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+    /* border-collapse: collapse; */
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.mytable {
+    border-radius: 5px;
+    border: 3px solid rgb(10, 146, 78);
+    width: 100%;  
+    text-align: center;
+}
+
+
+.mytable th, .mytable td {
+    border-radius: 5px;
+    border: 2px dotted rgb(10, 146, 78);
+}
+
+#table2, #table2 th, #table2 td{
+    border: none;
+}
+
+#table2 img {
+    width: 250px;
+}
+
+#divWithArticleTable {
+    width: 50%;
+    min-width: 550px;
+}
+
+#divWithArticleTable img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+}
