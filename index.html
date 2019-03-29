@@ -6,6 +6,21 @@
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="masonry.pkgd.js"></script>
     <title>Html Page</title>
+
+    <script>
+        $(".id").imagesLoaded(function () {
+            $('.id').masonry({
+                itemSelector: '.scrapcontent',
+                columnWidth: 3,
+                isAnimated: true,
+                animationOptions: {
+                    duration: 700,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -192,24 +207,24 @@
                 </tr>
             </table>
         </div>
-                <!--Filler-->
-                <div class="grid-item filler">
-                        <img src="https://images.pexels.com/photos/796504/pexels-photo-796504.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            alt="bird Image">
-                    </div>
-                    <div class="grid-item filler">
-                        <img src="https://images.pexels.com/photos/775316/pexels-photo-775316.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            alt="bird image">
-                    </div>
-                    <div class="grid-item filler">
-                        <img src="https://images.pexels.com/photos/48132/eagle-bird-predator-detail-48132.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            alt="bird image">
-                    </div>
-                    <div class="grid-item filler">
-                            <img src="https://images.pexels.com/photos/154430/pexels-photo-154430.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                alt="bird image">
-                        </div>
-                    <!--End Filler-->
+        <!--Filler-->
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/796504/pexels-photo-796504.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird Image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/775316/pexels-photo-775316.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/48132/eagle-bird-predator-detail-48132.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/154430/pexels-photo-154430.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <!--End Filler-->
     </div>
 
 
