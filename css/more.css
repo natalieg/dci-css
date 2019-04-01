@@ -1,0 +1,8 @@
+.changeSize img {
+    max-width: 45%;
+    height: auto;
+}
+
+.fixedSize img {
+    width: 300px;
+}
