@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,27 @@
     <link rel="stylesheet" href="css/more.css">
     <title>More HTML</title>
 </head>
+
 <body>
     <div>
         <a href="index.html">Home</a>
     </div>
 
+
     <div>
-    <!--different pictures are shown depending on the size of the browser-->
+        <h1 class="responsive-h1">Responsive Text</h1>
+    </div>
+
+    <div>
+        <!--different pictures are shown depending on the size of the browser-->
         <picture>
             <source srcset="img/birds/1.jpeg" media="(max-width:500px)">
             <source srcset="img/birds/2.jpeg" media="(max-width:900px)">
             <source srcset="img/birds/3.jpeg" media="(max-width:1200px)">
-            <img src="img/birds/4.jpeg" width="100%" alt="Bird Image">
+            <img src="img/birds/4.jpeg" alt="Bird Image">
         </picture>
     </div>
+
     <hr>
     <div class="changeSize">
         <img src="img/birds/pexels-photo-145378.jpeg" alt="Bird Image">
@@ -31,10 +39,11 @@
     </div>
     <hr>
     <div class="fixedSize">
-            <img src="img/birds/1.jpeg" alt="Bird Image">
-            <img src="img/birds/2.jpeg" alt="Bird Image">
-            <img src="img/birds/3.jpeg" alt="Bird Image">
-            <img src="img/birds/4.jpeg" alt="Bird Image">
-        </div>
+        <img src="img/birds/1.jpeg" alt="Bird Image">
+        <img src="img/birds/2.jpeg" alt="Bird Image">
+        <img src="img/birds/3.jpeg" alt="Bird Image">
+        <img src="img/birds/4.jpeg" alt="Bird Image">
+    </div>
 </body>
+
 </html>

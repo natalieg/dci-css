@@ -6,3 +6,59 @@
 .fixedSize img {
     width: 300px;
 }
+
+picture img {
+    width: 80%;
+}
+
+/* h1 resiying in relation to window */
+.responsive-h1 {
+    font-size: 9vw;
+}
+
+/* responsive divs ////////////////////////////////////////////////*/
+
+body {
+    margin: 0px;
+}
+
+div {
+    margin: 0px;
+    padding: 20px 0 20px 0;
+    float: left;
+}
+
+div p {
+    padding: 5px;
+}
+
+.left {
+    background-color: rgba(158, 204, 235, 0.705);
+    width: 20%;
+}
+
+.main {
+    background-color: rgba(236, 186, 186, 0.363);
+    width: 60%;
+}
+
+.right {
+    background-color: rgba(143, 168, 99, 0.315);
+    width: 20%;
+}
+
+@media screen and (max-width:400px){
+    .left, .main, .right {
+        width: 100%;
+        color: rgb(48, 42, 42);
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+    .left {
+        background-color: rgb(63, 53, 88);
+        color: white;
+    }
+    body {
+        background-color: honeydew;
+    }
+}
