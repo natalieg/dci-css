@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background: rgb(184, 154, 154);
+    border-bottom: 1px solid black;
+    padding: 0;
+    overflow: hidden;
+    /* text-align: center; */
+}
+
+nav a {
+    color: #333;
+    padding: 16px;
+    font-size: 17px;
+    text-decoration: none;
+    float: left;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: beige;
+}
+
+article {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+main {
+    height: calc(100vh - 215px);
+}
+
+@media only screen and (max-height:500px){
+   main {
+       height: 400px;
+   }
+}

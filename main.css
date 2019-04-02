@@ -115,6 +115,19 @@ table, th, td {
     width: 200px;
 }
 
-.filler {
-    /* background-color: #8d6e63; */
+/*Responsive*/
+
+@media only screen and (max-width:600px){
+    div {
+        width: 95%;
+    }
+    img {
+        width: 100%;
+    }
+    .filler {
+        display: none;
+    }
+    body {
+        font-size: 120%;
+    }
 }
