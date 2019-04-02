@@ -12,9 +12,10 @@ header, footer {
 nav {
     background: rgb(184, 154, 154);
     border-bottom: 1px solid black;
-    padding: 0;
+    /* padding: 16px; */
+    /* padding: 0; */
     overflow: hidden;
-    /* text-align: center; */
+    text-align: center;
 }
 
 nav a {
@@ -22,7 +23,8 @@ nav a {
     padding: 16px;
     font-size: 17px;
     text-decoration: none;
-    float: left;
+    display: inline-block;
+    /* float: left; */
 }
 
 nav a:hover {
@@ -30,17 +32,33 @@ nav a:hover {
     color: beige;
 }
 
-article {
+article, p {
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
+    text-align: justify;
 }
 main {
-    height: calc(100vh - 215px);
+    /* height: calc(100vh - (215px + 152px)); */
 }
 
-@media only screen and (max-height:500px){
-   main {
-       height: 400px;
-   }
+section, details {
+    padding: 14px;
 }
+
+/* Responsive */
+
+   @media only screen and (max-width:500px){
+        nav a {
+            font-size: 130%;
+            /* width: 100%; */
+            padding: 16px 0;
+            display: block;
+        }
+   } 
+
+   /* @media only screen and (max-height:500px) {
+    main {
+        height: 350px;
+    } 
+}*/
