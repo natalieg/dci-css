@@ -51,8 +51,7 @@ section, details {
    @media only screen and (max-width:500px){
         nav a {
             font-size: 130%;
-            /* width: 100%; */
-            padding: 16px 0;
+            width: 100%;
             display: block;
         }
    } 
