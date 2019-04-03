@@ -1,0 +1,101 @@
+
+
+#myDiv {
+    width: 30%;
+    background-color: rgb(51, 60, 63);
+    height: 300px;
+    margin: 0 auto;
+    color: white;
+}
+
+p {
+    padding-top: 15px;
+    text-align: center;
+}
+#div2 {
+    padding: 20px;
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#div3 {
+    width: 30%;
+    height: 30%;
+    padding: 20px;
+    background-color: white;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+/*****************************/
+
+html, body {
+    background-color: rgb(235, 208, 233);
+    margin: 0;
+    display: table;
+    height: 100%;
+    width: 100%
+}
+
+#wrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#header {
+    width: 100vw;
+    height: 250px;;
+    background-color: rgb(37, 68, 75);
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#header p {
+    font-size: 9px;
+    color: white;
+}
+
+#test {
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: rebeccapurple;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*****************************************/
+
+#header3 {
+    position: relative;
+    height: 150px;
+}
+
+#nav3 {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+#nav3 a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+#nav3 a:hover {
+    background-color: navy;
+    color: white;
+}
