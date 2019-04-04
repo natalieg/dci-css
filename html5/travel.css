@@ -232,7 +232,16 @@ article p {
     }
     footer div {
         height: 160px;
-        width: 29%;
+        width: 25%;
+    }
+    footer h2 {
+        font-size: 0.9em;
+    }
+    footer p {
+        font-size: 0.8em;
+    }
+    footer ul {
+        columns: 1;
     }
     article p, p {
         font-size: 1.0em;
