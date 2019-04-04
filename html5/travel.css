@@ -246,4 +246,7 @@ article p {
     article p, p {
         font-size: 1.0em;
     }
+    nav a:hover {
+        padding: 0;
+    }
 }
