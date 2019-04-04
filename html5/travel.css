@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    min-width: 250px;
 }
 
 h2 {
@@ -161,7 +162,15 @@ article p {
     -webkit-columns: 2;
     -moz-columns: 2;
     padding-left: 9px;
+    list-style-image: url(img/list.png);
  }
+
+ #friends a {
+    text-decoration: none;
+    color: black;
+ }
+
+ 
 
  @media only screen and (min-width:300px) and (max-width:600px){
     nav {
@@ -191,7 +200,7 @@ article p {
 
 @media only screen and (max-width:430px){
     header {
-        height: 210px;
+        height: 220px;
     }
     nav {
         top: 120px;
@@ -202,6 +211,7 @@ article p {
     nav a {
         display: block;
         width: 100%;
+        font-size: 1.1em;
     }
     #bannerIcon {
         width: 70px;
@@ -223,5 +233,8 @@ article p {
     footer div {
         height: 160px;
         width: 29%;
+    }
+    article p, p {
+        font-size: 1.0em;
     }
 }
