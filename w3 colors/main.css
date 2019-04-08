@@ -1,0 +1,20 @@
+p {
+    color: blueviolet;
+}
+
+.para1 {
+    display: inline;
+}
+
+.para2 {
+    display: block;
+}
+
+.para3 {
+    display: none;
+}
+
+.para4 {
+    display: inline-block;
+    width: 200px;
+}
