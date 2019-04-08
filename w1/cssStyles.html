@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Html Page</title>
+    <script>
+        $(document).ready(function () {
+            // init Masonry
+            var $grid = $('.grid').masonry({
+                // options...
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Hello World my first Heading</h1>
+    <div class="grid">
+        <div class="grid-item">
+            <a href="responsive2.html">Responsive 2</a><br>
+            <a href="more.html">More</a><br>
+            <a href="responsiveGrid.html">Responsive Gridlayout</a><br>
+            <a href="html5/index.html">HTML 5 Responsive</a>
+        </div>
+        <div class="grid-item">
+            <p id="firstP">new my first paragraf</p>
+            <p>This is more text</p>
+            <p>And even more</p>
+        </div>
+        <div class="grid-item">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea takimata sanctus est </p>
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/46166/robin-european-robin-erithacus-rubecula-red-46166.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <div class="grid-item">
+            <h2 style="color: rgb(99, 59, 59)">The second Heading</h2>
+            <h3 style="color:rgb(23, 71, 71)">This is h3</h3>
+            <h4 style="color:rgb(58, 97, 57)">This is h4</h4>
+            <h5 style="color:rgb(66, 82, 34)">This is h5</h5>
+            <h6 style="color:rgb(119, 34, 105)">This is h6</h6>
+        </div>
+        <div>
+            <a href="https://natalieg.github.io/dci1/">Go to my github repository</a><br>
+            <a href="www.google.com">Google</a>
+        </div>
+        <div class="grid-item">
+            <b>Bold Text</b><br>
+            <strong>Strong Text</strong><br>
+            <i>Italic Text</i><br>
+            <mark>Marked Text</mark><br>
+            <small>Small Text</small><br>
+            <del>Deleted Text</del><br>
+            <ins>Inserted Text</ins><br>
+            <sub>Substript Text</sub>
+            <sup>Superscript Text</sup><br>
+            (x + y)<sup>2</sup>
+            <hr>
+            <!-- <strong>I'm invisible</strong> -->
+            <!-- Commented text with ctrl + k + c  -->
+            <p>we are:&nbsp;&nbsp;&nbsp;<q>Web Developers</q></p>
+            <!-- &nbsp; to create spacing  -->
+            <button>Button</button><br>
+        </div>
+        <div class="grid-item">
+            <address>
+                Written by Natalie Gornicki<br>
+                Visit us at <br>
+                <a target="blank" href="http://www.google.com">Website</a><br>
+                <!-- Website wird als neuer Tab geoeffnet -->
+                Schoene Strasse 22<br>
+                22001 Hamburg
+            </address>
+        </div>
+        <div id="about" class="grid-item">
+            <a href="about.html">About Us</a>
+        </div>
+        <!--Filler-->
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/45851/bird-blue-cristata-cyanocitta-45851.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="Bluebird Image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/905248/pexels-photo-905248.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/792416/pexels-photo-792416.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <!--End Filler-->
+        <!--Images, some with links-->
+        <div style="width:430px" class="grid-item">
+            <a href="img/3.png" target="blank"><img src="img/3.png" alt="jellyfish image" title="jellyfish"></a>
+            <img src="img/1.png" alt="bird image" title="bird">
+            <img src="https://d1ia71hq4oe7pn.cloudfront.net/og/75335251-1200px.jpg" alt="bird image" title="bird">
+            <a href="http://www.google.com" target="blank"><img src="img/2.jpg" alt="flowers image"
+                    title="flowers with link to google"></a>
+        </div>
+        <!--Filler-->
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/35598/peacock-bird-colorful-blue.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="Bluebird Image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/414181/pexels-photo-414181.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <!--End Filler-->
+        <div style="width:40%" class="javaScriptInfo grid-item">
+            <p id="javascript">
+                <img src="img/javascript.jpg" alt="Javascript Image">
+                JavaScript is the programming language of HTML and the Web.
+                JavaScript is easy to learn.
+                This tutorial will teach you JavaScript from basic to advanced.
+            </p>
+        </div>
+        <div style="width:40%" class="javaScriptInfo grid-item">
+            <p id="float2">
+                <img src="img/javascript.jpg" alt="Javascript Image">
+                <b>JavaScript</b> is the programming language of <i>HTML</i> and the Web.
+                JavaScript is easy to learn.
+                This tutorial will teach you JavaScript from basic to advanced.
+            </p>
+        </div>
+        <!--Filler-->
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/432991/pexels-photo-432991.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="Bluebird Image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/162223/hummingbird-flying-portrait-wildlife-162223.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/145897/pexels-photo-145897.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <!--End Filler-->
+        <div class="grid-item" style="width:430px">
+            <table class="mytable">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>City</th>
+                    <th colspan="2">Phone</th>
+                </tr>
+                <tr>
+                    <td colspan="5">Information</td>
+                </tr>
+                <tr>
+                    <td>Natalie</td>
+                    <td>Gornicki</td>
+                    <td>Hamburg</td>
+                    <td>124</td>
+                    <td>124444</td>
+                </tr>
+                <tr>
+                    <td>Hans</td>
+                    <td>Test</td>
+                    <td>Berlin</td>
+                    <td>45454</td>
+                    <td>454</td>
+                </tr>
+            </table>
+        </div>
+        <div id="divWithArticleTable" class="grid-item">
+            <!-- table>.row.item$*3>.col.item$*3 -->
+            <table id="table2">
+                <tr class="row item1">
+                    <td><img src="img/square1.jpg" alt="image of bird"></td>
+                    <td>Look at this awesome text my eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed
+                        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                        gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor s</td>
+                </tr>
+                <tr class="row item2">
+                    <td>t this awesome text my eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet cl</td>
+                    <td><img src="img/square2.png" alt="boy with stars image"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/square3.png" alt="image mit sternen"></td>
+                    <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--Filler-->
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/796504/pexels-photo-796504.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird Image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/775316/pexels-photo-775316.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/48132/eagle-bird-predator-detail-48132.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <div class="grid-item filler">
+            <img src="https://images.pexels.com/photos/154430/pexels-photo-154430.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="bird image">
+        </div>
+        <!--End Filler-->
+    </div>
+
+
+
+    <div>
+        <a href="#top">Go to the top</a>
+    </div>
+</body>
+
+</html>

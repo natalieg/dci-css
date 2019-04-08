@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box {
+    margin-right: 5px;
+}
+
+iframe { 
+    width: 300px;
+    height: 300px;
+}
+
+a {
+    font-size: 24px;
+    color: rgb(33, 33, 77);
+}
