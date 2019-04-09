@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 25vw;
+    height: 25vw;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+
+.box img {
+    object-fit: cover;
+    object-position: center center;
+    width:100%;
+}
