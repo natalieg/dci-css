@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
-    margin: 0;
-    max-width: 1000px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .header {
@@ -12,21 +16,26 @@ html, body {
     background-color: rgb(119, 24, 0);
     background-position: center center;
     background-size: cover;
+    outline: 1px solid #FDF3D0;
+    outline-offset: -10px;
 
     color: hsl(0, 100%, 3%);
-    max-height: 180px;
+    max-height: 200px;
 }
 
 .header h1 {
     font-size: calc(14px + 7vw);
-    margin: 10px 0;
+    margin: 0 15px;
 }
 
 .header p {
-    /* background-color: rgba(250, 227, 216, 0.459); */
-    width: 100%;
-    padding: 4px 0;
-} 
+    padding: 0 20px;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 .nav {
     background-color: #EEBEA8;
@@ -50,20 +59,84 @@ html, body {
 .noimg {
     background-color: rgb(165, 173, 180);
     width: 100%;
-    padding: 0;
-}
-
-.left {
-    background-color: antiquewhite;
+    padding: 20px;
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+}
+
+.left {
+    background-color: antiquewhite;
+    flex: 30%;
+    padding: 20px;
+}
+
+#imgUs {
+    background-image: url("img/we.jpeg");
+    background-size: cover;
+    background-position: center top;
+    background-blend-mode: overlay;
+    background-color: rgb(131, 165, 175);
+    border: 1px solid rgb(30, 30, 37);
+}
+
+.main {
+    flex: 70%;
+    padding: 20px;
+}
+
+h5 {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+}
+
+#imgMainBanner {
+    background-image: url("img/cover2.jpeg");
+    background-position: center center;
+    background-blend-mode: overlay;
+    background-size: 100%;
+    background-color: rgb(119, 165, 187);
+    outline: 1px solid white;
+    outline-offset: -4px;
 }
 
 .footer {
     background-color: #80566D;
     text-align: center;
+}
+
+.images {
+    margin-top: 10px;
+}
+
+.images>div {
+    background-size: cover;
+    background-position: center center;
+    height: 150px;
+}
+
+.images div:nth-child(1){
+    background-image: url("img/more_plant1.jpeg");
+}
+
+.images div:nth-child(3){
+    background-image: url("img/more_cat.jpeg");
+}
+
+.images div:nth-child(5){
+    background-image: url("img/more_plant2.jpeg");
+}
+
+
+/* Responsive ************************/
+
+@media only screen and (max-width: 600px){
+    .container {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 1000px){
