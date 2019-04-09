@@ -93,8 +93,29 @@ h5 {
     padding: 0;
 }
 
+
 #imgMainBanner {
     background-image: url("img/cover2.jpeg");
+    background-position: center center;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-color: rgb(119, 165, 187);
+    outline: 1px solid white;
+    outline-offset: -4px;
+}
+
+#imgMain1 {
+    background-image: url("img/main2.jpeg");
+    background-position: center center;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-color: rgb(119, 165, 187);
+    outline: 1px solid white;
+    outline-offset: -4px;
+}
+
+#imgMain2 {
+    background-image: url("img/main3.jpeg");
     background-position: center center;
     background-blend-mode: overlay;
     background-size: cover;
@@ -106,6 +127,12 @@ h5 {
 .footer {
     background-color: #80566D;
     text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.footer h2 {
+    margin: 0;
 }
 
 .images {
@@ -130,14 +157,54 @@ h5 {
     background-image: url("img/more_plant2.jpeg");
 }
 
+/* GALLERY ****************************/
+
+.rowImg {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    -webkit-display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rowImg img {
+    flex: 25%;
+    -ms-flex: 25%;
+    -webkit-flex: 25%;
+    vertical-align: middle;
+    /* max-height: 100px; */
+    /* align-self: center; */
+}
+
 
 /* Responsive ************************/
 
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 800px){
+    .rowImg img{
+        flex: 50%;
+        -ms-flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px){
     .container {
         flex-direction: column;
     }
+    .rowImg img{
+        flex: 100%;
+        -ms-flex: 100%;
+        max-width: 100%;
+    }
+    .row,.nav{
+        flex-direction: column;
+        text-align: center;
+    }
 }
+
 
 @media only screen and (min-width: 1000px){
     .header h1{
