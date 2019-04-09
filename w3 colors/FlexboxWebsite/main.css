@@ -97,7 +97,7 @@ h5 {
     background-image: url("img/cover2.jpeg");
     background-position: center center;
     background-blend-mode: overlay;
-    background-size: 100%;
+    background-size: cover;
     background-color: rgb(119, 165, 187);
     outline: 1px solid white;
     outline-offset: -4px;
