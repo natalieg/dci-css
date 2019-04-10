@@ -161,32 +161,31 @@ h5 {
 
 .rowImg {
     display: flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    -webkit-display: flex;
     flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 2px;
+}
+
+.imgWrapper {
+    flex: 25%;
+    vertical-align: middle;
+    height: 16vw;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    position: relative;
 }
 
 .rowImg img {
-    flex: 25%;
-    -ms-flex: 25%;
-    -webkit-flex: 25%;
-    vertical-align: middle;
-    /* max-height: 100px; */
-    /* align-self: center; */
+    width:105%;
+    position: absolute;
+    bottom: 2px;
 }
-
 
 /* Responsive ************************/
 
 @media screen and (max-width: 800px){
-    .rowImg img{
-        flex: 50%;
-        -ms-flex: 50%;
-        max-width: 50%;
+    .imgWrapper{
+       flex: 50%;
+       height: 30vw;
     }
 }
 
@@ -194,10 +193,9 @@ h5 {
     .container {
         flex-direction: column;
     }
-    .rowImg img{
+    .imgWrapper{
         flex: 100%;
-        -ms-flex: 100%;
-        max-width: 100%;
+        height: 60vw;
     }
     .row,.nav{
         flex-direction: column;
@@ -209,5 +207,8 @@ h5 {
 @media only screen and (min-width: 1000px){
     .header h1{
         font-size: 5.5em;
+    }
+    .imgWrapper {
+        max-height: 200px;
     }
 }
