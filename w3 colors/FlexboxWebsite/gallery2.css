@@ -106,4 +106,8 @@ h1, h2 {
         flex: 100%;
         max-width: 100%;
     }
+    .row,.nav{
+        flex-direction: column;
+        text-align: center;
+    }
 }
