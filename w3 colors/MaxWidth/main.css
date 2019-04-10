@@ -1,0 +1,46 @@
+div {
+    padding: 40px;
+    margin: 0 auto;
+    border: 2px solid rgb(117, 115, 107);
+}
+
+.ex1 {
+    width: 600px;
+    height: 60px;
+    padding: 40px 0;
+    background-image: url("img/img23.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+    background-color: rgb(228, 194, 167);
+    border: none;
+    outline: 1px solid rgb(255, 255, 255);
+    outline-offset: -10px;
+    text-align: center;
+}
+
+.ex1 p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 70px;
+    background-color: rgba(59, 11, 63, 0.459);
+    width: 581px;
+    padding: 4px 0;
+    margin-left: 9px;
+    color: white;
+}
+
+.ex2 {
+    max-width: 600px;
+}
+
+.overflow {
+    max-width: 50%;
+    height: 100px;
+    overflow: auto;
+    background-color: beige;
+    text-align: justify;
+}
+
+.overflow img {
+    width: 100%;
+}

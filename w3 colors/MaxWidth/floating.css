@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* wololo */
+
+#img2 {
+    float: right;
+}
+
+img {
+   width: 50%;
+    float: left;
+    margin: 6px;
+}
+
+#article1 {
+    float: left;
+    direction: rtl;
+}
+
+#article1 p {
+    direction: ltr;
+}
+
+#article2 {
+    float: right;
+}
+
+#article3 {
+    background-image: url("img/img25.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+    background-color: rgb(140, 141, 99);
+    outline: 1px solid #FDF3D0;
+    /* outline-offset: -10px; */
+    box-shadow: -2px 0px 0px 0px rgb(0, 0, 0), 2px 0px 0px 0px black;
+}
+
+.article {
+    width: calc(100% / 3);
+    height: 100vh;
+    float: left;
+    overflow: auto;
+    padding: 0 4px;
+}
+
+h2 {
+    padding: 0 10px;
+}
+
+.article p{
+    text-align: justify;
+    padding: 10px;
+}

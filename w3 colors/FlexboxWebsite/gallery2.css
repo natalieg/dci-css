@@ -82,6 +82,9 @@ h1, h2 {
 }
 
 .column {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; */
     flex: 25%;
     max-width: 25%;
     padding: 0 2px;
@@ -91,6 +94,10 @@ h1, h2 {
     margin-top: 4px;
     width: 100%;
     vertical-align: middle;
+}
+
+.special {
+  
 }
 
 
