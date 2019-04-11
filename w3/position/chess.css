@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.board {
+    border: 3px solid black;
+    width: 485px;
+}
+
+.white, .black {
+    width: 60px;
+    height: 60px;
+}
+
+.black {
+    background-color: black;
+    border: 6px solid rgb(0, 0, 0);
+    position: absolute;
+    color: white;
+    top: 0px;
+}
+
+.row {
+    position: relative;
+    height: 60px;
+    /* border: 1px solid red; */
+}
+
+#b2 {
+    left: 60px;
+}
+#b4 {
+    left: 180px;
+}
+#b6 {
+    left: 300px;
+}
+#b8 {
+    left: 420px;
+}
+
+
+#b1 {
+    left: 0;
+}
+#b3 {
+    left: 120px;
+}
+#b5 {
+    left: 240px;
+}
+#b7 {
+    left: 360px;
+}
