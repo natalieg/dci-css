@@ -19,10 +19,11 @@ div {
       rgba(230, 230, 109, 0.459));
 }
 
-div h1 {
+.gradientBox h1 {
   position: relative;
   top: 80px;
 }
+
 
 .favoriteDiv {
   background-image: linear-gradient(360deg,
@@ -65,16 +66,16 @@ div h1 {
   outline: none;
 }
 
-.div5 {
+.gradientDiv {
   background-color: rgb(33, 33, 58);
+  height: 12vw;
 }
 
 .text-gradient {
-  margin: 0;
-  padding: 0;
   font-size: 3.5em; 
   font-family: "Arial Black"; 
-  top: 65px;
+  vertical-align: middle;
+  line-height: 12vw; 
   background-image:linear-gradient(90deg,
   rgb(180, 180, 216),
   rgb(230, 230, 140),
@@ -91,6 +92,8 @@ div h1 {
  }
 
  .text-image {
+  vertical-align: middle;
+  line-height: 180%; 
   font-weight: bold;
   top: 50px;
   font-size: 7em;
@@ -104,14 +107,16 @@ div h1 {
 }
 
 .text-shadow {
-  top: 10px;
+  vertical-align: middle;
+  line-height: 140%; 
   font-size: 60px;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px black;
 }
 
 .darkerInnerBorder {
-  outline: 1px solid rgba(97, 97, 97, 0.664);
+  background: rgb(71, 39, 50);
+  outline: 1px solid rgba(204, 199, 199, 0.664);
   /* box-shadow: 2px 2px 2px rebeccapurple; */
   position: absolute;
   width: 95%;
@@ -129,4 +134,23 @@ div h1 {
   /* transform: rotate(1deg); */
   transform: rotate(6deg);
   /* transform: scale(1.8); */
+}
+
+@media only screen and (max-width: 890px){
+  .divTextImg {
+    height: 20vw;
+  }
+  .text-image {
+    font-size: 12vw;
+  }
+
+  .text-gradient {
+    font-size: 8vw;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .text-shadow {
+    font-size: 12vw;
+  }
 }
