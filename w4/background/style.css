@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    /* background-color: rgb(114, 166, 184); */
+    /* background-attachment: fixed; */
+    background: url("img/pexels-photo-673857.jpeg") center center no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    /* height: 1500px; */
+}
+
+#mainDiv {
+    background-color: rgba(168, 230, 235, 0.623);
+    position: relative;
+    top: 150px;
+    text-align: center;
+    outline: 1px solid rgb(255, 255, 255);
+    outline-offset: -10px;
+}
+
+#mainDiv h1 {
+    padding: 5% 0;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+
+#mainDiv p {
+    padding: 5px 20px 40px;
+    text-align: justify;
+}
