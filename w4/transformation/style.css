@@ -1,0 +1,134 @@
+div {
+    padding: 5px;
+    margin: 20px;
+    background-color: rgb(112, 112, 206);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.class1 {
+    border-radius: 50%;
+    transform: translate(200px, 100px);
+}
+
+.class2 {
+    /* background-color: brown; */
+    transform: translate(90px, 60px)  scale(0.50) rotate(45deg) skew(30deg);
+}
+
+.feather2 {
+    /* background-color: brown; */
+    transform: translate(90px, 75px)  scale(0.50) rotate(30deg) skew(40deg);
+}
+.feather3 {
+    /* background-color: brown; */
+    transform: translate(90px, 75px)  scale(0.50) rotate(10deg) skew(40deg);
+}
+.feather4 {
+    /* background-color: brown; */
+    transform: translate(95px, 90px)  scale(0.50) rotate(-5deg) skew(40deg);
+}
+.feather5 {
+    /* background-color: brown; */
+    transform: translate(95px, 100px)  scale(0.50) rotate(-25deg) skew(40deg);
+}
+
+.class3 {
+    /* background-color: rebeccapurple; */
+    border-radius: 50%;
+    transform: translate(280px, 20px) scale(0.7);
+}
+
+.class4 {
+    background-color: brown;
+    transform: skew(40deg) scale(0.2) translate(1600px, 150px) rotate(2deg);
+}
+
+.class5 {
+    background-color: black;
+    border-radius: 50%;
+    transform: scale(0.07) translate(4300px, -80px);
+}
+
+.wing {
+    background-color: rgb(153, 120, 184);
+    border-radius: 50%;
+    transform: scale(0.8,0.5) translate(210px, 190px) rotate(-40deg);
+}
+.wing:hover {
+    background-color: rgb(153, 120, 184);
+    border-radius: 50%;
+    transform: scale(0.8,0.2) translate(210px, 190px);
+    transition: 2s;
+}
+
+
+.leg1 {
+    background-color: black;
+    transform: scale(0.03, 0.15) translate(6000px, 1450px);
+}
+
+.leg2 {
+    background-color: black;
+    transform: scale(0.03, 0.15) translate(7000px, 1450px);
+}
+
+.foot1 {
+    background-color: black;
+    transform: scale(0.10, 0.03) translate(1850px, 7800px);
+}
+
+.foot2 {
+    background-color: black;
+    transform: scale(0.10, 0.03) translate(2130px, 7800px);
+}
+
+
+/* ****************** */
+
+.myDiv {
+    width: 200px;
+    height: 150px;
+    background: linear-gradient(rgb(194, 124, 124), rgb(106, 106, 204));
+    transform: translate(20px, 30px);
+    text-align: center;
+    line-height: 150px;
+    transition: 3s;
+}
+
+.myDiv:hover {
+    transform: 
+    translate(30px, 80px) 
+    rotate(45deg)
+    scale(3,5);
+
+    transform: matrix(2,0,0,4,200,200);
+
+    background-image: url(grinning-face-with-smiling-eyes_1f601.png);
+    background-repeat: no-repeat;
+}
+
+.hello {
+    opacity: 0;
+}
+
+.hello:hover {
+    font-size: 40px;
+    width: 100%;
+    height: 400%;
+    position: relative;
+    left: 100px;
+    top: -80px;
+    animation: 3s fadeIn;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

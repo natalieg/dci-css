@@ -1,11 +1,13 @@
-body {
+html, body {
   background-color: rgb(218, 231, 238);
+  min-width: 330px;
+  margin: 0;
 }
 
 div {
   text-align: center;
   color: white;
-  width: 100%;
+  width: 95%;
   height: 200px;
   outline: 1px solid rgb(218, 231, 238);
   outline-offset: -10px;
@@ -126,7 +128,7 @@ div {
 
 .backgroundImg {
   margin-top: 60px;
-  width: 90%;
+  width: 90%;3
   position: relative;
   background: rebeccapurple;
   outline: none;
