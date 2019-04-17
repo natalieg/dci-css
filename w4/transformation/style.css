@@ -42,7 +42,11 @@ div {
 
 .class4 {
     background-color: brown;
-    transform: skew(40deg) scale(0.2) translate(1600px, 150px) rotate(2deg);
+    transform: 
+    scale(0.1, 0.2) 
+    translate(3480px, 150px) 
+    rotate(230deg)
+    rotateY(45deg);
 }
 
 .class5 {
@@ -54,12 +58,16 @@ div {
 .wing {
     background-color: rgb(153, 120, 184);
     border-radius: 50%;
-    transform: scale(0.8,0.5) translate(210px, 190px) rotate(-40deg);
+    transform: scale(0.8,0.5) translate(210px, 190px) rotate(-40deg)
+    rotateY(45deg);
 }
+
+
 .wing:hover {
     background-color: rgb(153, 120, 184);
     border-radius: 50%;
-    transform: scale(0.8,0.2) translate(210px, 190px);
+    transform: scale(0.8,0.2) translate(210px, 190px) rotate(-40deg)
+    rotateY(45deg);
     transition: 2s;
 }
 

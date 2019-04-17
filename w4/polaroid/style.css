@@ -2,11 +2,11 @@ body {
     background-color: rgba(88, 75, 67, 0.493);
     background-image: url(img/table1.jpeg);
     background-size: cover;
-    background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-attachment: fixed;
     /* height: 100vh; */
 }
+
 
 .polFrame {
     position: absolute;
@@ -16,6 +16,7 @@ body {
     height: 250px;
     width: 200px;
     box-shadow: 1px 1px 10px black;
+    transition: 2s;
 }
 
 .polFrame>div {
@@ -79,6 +80,11 @@ body {
     transform: translate(240px, 50px) rotate(-15deg);
 }
 
+.frame3:hover {
+    transform: translate(240px, 0px) rotate(-25deg);
+    transition: 2s;
+}
+
 .frame4 {
     transform: translate(280px, 280px) rotate(5deg);
     z-index: -1;
@@ -93,4 +99,10 @@ body {
 .frame5 {
     transform: translate(540px, 280px) rotate(-15deg);
     z-index: 1;
+}
+
+.frame5:hover {
+    transform: translate(540px, 320px) rotate(-20deg);
+    z-index: 1;
+    transition: 2s;
 }
