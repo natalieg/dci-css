@@ -1,40 +1,53 @@
-div {
+.wrapper {
+    width: 100px;
+    height: 100px;
+    transform: scale(1, 1);
+    border: 1px solid black;
+}
+
+.wrapper div {
     padding: 5px;
     margin: 20px;
-    background-color: rgb(112, 112, 206);
     width: 200px;
     height: 200px;
     position: absolute;
 }
 
 .class1 {
+    background-color: rgb(112, 112, 206);
     border-radius: 50%;
     transform: translate(200px, 100px);
 }
 
 .class2 {
+    background-color: rgb(112, 112, 206);
     /* background-color: brown; */
     transform: translate(90px, 60px)  scale(0.50) rotate(45deg) skew(30deg);
 }
 
 .feather2 {
+    background-color: rgb(112, 112, 206);
     /* background-color: brown; */
     transform: translate(90px, 75px)  scale(0.50) rotate(30deg) skew(40deg);
 }
 .feather3 {
+    background-color: rgb(112, 112, 206);
     /* background-color: brown; */
     transform: translate(90px, 75px)  scale(0.50) rotate(10deg) skew(40deg);
 }
 .feather4 {
+    background-color: rgb(112, 112, 206);
     /* background-color: brown; */
     transform: translate(95px, 90px)  scale(0.50) rotate(-5deg) skew(40deg);
 }
 .feather5 {
+    background-color: rgb(112, 112, 206);
     /* background-color: brown; */
     transform: translate(95px, 100px)  scale(0.50) rotate(-25deg) skew(40deg);
 }
 
 .class3 {
+    background-color: rgb(112, 112, 206);
     /* background-color: rebeccapurple; */
     border-radius: 50%;
     transform: translate(280px, 20px) scale(0.7);

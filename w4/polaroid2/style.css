@@ -1,0 +1,186 @@
+body {
+    background-color: rgba(88, 75, 67, 0.493);
+    background-image: url(img/table1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* height: 100vh; */
+}
+
+
+
+.polFrame {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 5px;
+    padding: 10px;
+    height: 250px;
+    width: 200px;
+    box-shadow: 1px 1px 10px black;
+    transition: -webkit-transform 2s; 
+}
+
+.polFrame>div {
+    width: 200px;
+    height: 200px;
+    box-shadow: inset 0 0 10px #000000;
+    background-position: center center;
+}
+
+.polImg1 {
+    background-image: url(img/1run.jpeg);
+    background-size: 150%;
+}
+
+.polImg2 {
+    background-image: url(img/2tree.JPG);
+    background-size: 150%;
+}
+
+.polImg3 {
+    background-image: url(img/3friends.JPG);
+    background-size: 100%;
+}
+
+.polImg4 {
+    background-image: url(img/4wed.JPG);
+    background-size: 120%;
+    background-position: top center;
+}
+
+.polImg5 {
+    background-image: url(img/5nage.JPG);
+    background-size: 120%;
+    /* background-position: top center; */
+}
+
+
+.polFrame p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic; 
+}
+
+.frame1 {
+    transform: rotate(20deg) translate(150px, 110px);
+}
+
+.frame1:hover {
+    transform: rotate(30deg) translate(150px, 130px);
+    transition: 2s;
+}
+
+.frame2 {
+    transform: translate(450px, 100px) rotate(12deg);
+}
+
+.frame2:hover {
+    transform: translate(450px, 20px) rotate(-20deg);
+    transition: 2s;
+}
+
+.frame3 {
+    transform: translate(240px, 50px) rotate(-15deg);
+}
+
+.frame3:hover {
+    transform: translate(240px, 0px) rotate(-25deg);
+    transition: 2s;
+}
+
+.frame4 {
+    transform: translate(280px, 280px) rotate(5deg);
+    z-index: -1;
+}
+
+.frame4:hover {
+    transform: translate(280px, 350px) rotate(7deg);
+    z-index: -1;
+    transition: 2s;
+}
+
+.frame5 {
+    transform: translate(540px, 280px) rotate(-15deg);
+    z-index: 1;
+}
+
+.frame5:hover {
+    transform: translate(540px, 320px) rotate(-20deg);
+    z-index: 1;
+    transition: 2s;
+}
+
+.polImg6 {
+    background-image: url(img/6mittelalter.JPG);
+    background-size: 100%;
+    /* background-position: top center; */
+}
+.frame6 {
+    transform: translate(680px, 80px) rotate(30deg);
+    z-index: 1;
+}
+.frame6:hover {
+    transform: translate(700px, 40px) rotate(10deg);
+    z-index: 1;
+    transition: 2s;
+}
+
+.polImg7 {
+    background-image: url(img/7doko.JPG);
+    background-size: 100%;
+    /* background-position: top center; */
+}
+.frame7 {
+    transform: translate(780px, 320px) rotate(-32deg);
+    z-index: 1;
+}
+.frame7:hover {
+    transform: translate(780px, 420px) rotate(-10deg);
+    z-index: 1;
+    transition: 2s;
+}
+
+.polImg8 {
+    background-image: url(img/8kanu.JPG);
+    background-size: 100%;
+    /* background-position: top center; */
+}
+.frame8 {
+    transform: translate(120px, 420px) rotate(-32deg);
+    z-index: -2;
+}
+.frame8:hover {
+    transform: translate(40px, 420px) rotate(-10deg);
+    z-index: -2;
+    transition: 2s;
+}
+
+.polImg9 {
+    background-image: url(img/9glocke.JPG);
+    background-size: 100%;
+    /* background-position: top center; */
+}
+.frame9 {
+    transform: translate(420px, 420px) rotate(5deg);
+    z-index: -2;
+}
+.frame9:hover {
+    transform: translate(420px, 520px) rotate(10deg);
+    z-index: -2;
+    transition: 2s;
+}
+
+.polImg10 {
+    background-image: url(img/10dage.jpg);
+    background-size: 140%;
+    /* background-position: top center; */
+}
+.frame10 {
+    transform: translate(650px, 480px) rotate(5deg);
+    z-index: -2;
+}
+.frame10:hover {
+    transform: translate(650px, 540px) rotate(-5deg);
+    z-index: -2;
+    transition: 2s;
+}
