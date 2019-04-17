@@ -28,8 +28,9 @@ body {
 }
 
 .polImg1 {
-    background-image: url(img/1run.jpg);
-    background-size: 150%;
+    background-image: url(img/1derbenni.JPG);
+    background-size: 120%;
+    background-position: top center;
 }
 
 .polImg2 {
