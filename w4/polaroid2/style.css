@@ -17,7 +17,7 @@ body {
     height: 250px;
     width: 200px;
     box-shadow: 1px 1px 10px black;
-    transition: -webkit-transform 2s; 
+    transition: -webkit-transform 10s; 
 }
 
 .polFrame>div {

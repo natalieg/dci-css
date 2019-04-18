@@ -1,0 +1,112 @@
+/* The animation code */
+@keyframes example {
+    0% {background-color: red;}
+    20% {top: 100px;}
+    30% {background-color: yellow; width: 200px}
+    60% {background-color: blue; left: 400px}
+    70% {top: 200px; transform: rotate(45deg)}
+    100% {background-color: red; top: 0;}
+  }
+
+  @keyframes circle {
+      25% {top: 0; left: 200px;}
+      50% {top: 200px; left: 400px; background-color: rgb(54, 99, 167)}
+      75% {top: 400px; left: 200px;}
+  }
+
+  @keyframes newAnimation {
+      0% {width: 300px;}
+      50% {width: 500px;height: 400px;transform: translate(200px, 200px)
+    rotateY(180deg) rotateX(180deg); background-image: url(flower3.jpeg)}
+  }
+
+  @keyframes gradient { 
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+
+
+  /* The element to apply the animation to */
+  .div1 {
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+
+  .div2 {
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    background-image: url(2.jpg);
+    background-size: cover;
+    border: 2px solid black;
+    animation-name: newAnimation;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(.17,.67,1,-0.13);
+    animation-iteration-count: infinite;
+
+  }
+
+  .div3 {
+      position: relative;
+      top: 200px;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 10px rgb(231, 69, 118);
+      background-color: rgb(209, 52, 52);
+      background-image: radial-gradient( 
+          circle at 20% 30px, 
+          rgb(245, 245, 245), 
+          rgb(241, 134, 166), 
+          rgb(85, 24, 42), 
+          rgba(199,2,60,1), 
+          rgba(199,2,60,0));
+      animation-name: circle;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+  }
+
+  .div4 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(54, 8, 8);
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+
+.gradient {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 50px;
+    background: linear-gradient(336deg, #067357, #efa600);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+    transition: 4s;
+    opacity: 0.5;
+}
+
+.gradient:hover {
+    transform: translate(700px,0);
+    transition: 4s;
+
+}

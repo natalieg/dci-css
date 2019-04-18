@@ -1,0 +1,13 @@
+.cube {
+    padding: 2px;
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transition: 4s;
+    float: left;
+}
+
+.cube:hover {
+    background-color: blue;
+    transition: 0.1s;
+}
