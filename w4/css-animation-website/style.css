@@ -47,7 +47,7 @@ p {
 
 @keyframes plane {
     0% {transform: translate(-200px, 0); opacity: 0;}
-    50% {transform: translate(100px, 0); opacity: 1;}
+    50% {transform: translate(0, 0); opacity: 1;}
     100% {transform: translate(200px, 0); opacity: 0;}
 }
 
@@ -106,4 +106,13 @@ p {
     }
   }
 
-
+  @media screen and (max-width: 500px){
+    .lowEdge {
+        animation: moveOut 2s;
+        transform: translate(0,400px);
+        transition: 2s;
+    }
+    .button {
+        top: 120px;
+    }
+  }
