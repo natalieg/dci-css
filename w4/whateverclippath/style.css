@@ -1,0 +1,54 @@
+
+:root {
+    --color: lawngreen;
+    --animationTime: 5s;
+    --divTop: 300px;
+    --divLeft: 200px;
+}
+.square {
+    position: absolute;
+    top: var(--divTop);
+    left: var(--divLeft);
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50px 0,50px 0, 100px 50px, 50px 100px, 0px 50px);
+    animation: color var(--animationTime) infinite;
+}
+
+ .hello {
+    height: var(--divTop);
+    /* background-image: url(img/flower3.jpeg); */
+    background-color: var(--color);
+}
+
+
+.hello1 {
+    height:  var(--divTop);
+    /* background-image: url(img/flower3.jpeg); */
+    background-color: rgb(229, 233, 25);
+    animation: move1 var(--animationTime) infinite;
+}
+
+@keyframes move1 {
+    50% { transform: translate(50px,-50px); background-color: rgb(192, 38, 90);
+    clip-path: polygon(40px 10px,65px 10px, 80px 50px, 50px 100px,0px 50px);
+    }
+}
+
+.hello2 {
+    height: 100px;
+    /* background-image: url(img/flower3.jpeg); */
+    background-color: rgb(119, 175, 63);
+    animation: move2 var(--animationTime) infinite;
+}
+
+@keyframes move2 {
+    50% {transform: translate(-50px,-50px);
+    background-color: rgb(190, 63, 106);
+    clip-path: polygon(40px 10px, 65px 10px, 100px 50px, 50px 100px, 20px 50px);
+}
+}
+
+@keyframes color {
+    50% {background-color: rgb(128, 26, 60)}
+}
