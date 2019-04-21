@@ -19,11 +19,11 @@ let divArray = [
 ];
 
 breakFreeButton.addEventListener('click', function(){
-    // birdPartDiv1.style.animationPlayState = "running";
 
-        divArray.forEach(element => {
+    divArray.forEach(element => {
             element.style.animationPlayState = "running";
         });
 
-    breakFreeButton.innerText = "Discover More";
+        // breakFreeButton.style.display = "none";
+        // breakFreeButton.innerText = "Discover More";
 });
