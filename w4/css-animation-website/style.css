@@ -1,13 +1,30 @@
 html {
-    min-height: 500px;
+   
 }
 
 html, body {
+    background-color: aliceblue;
     margin: 0;
+    overflow-x: hidden;
+    height: 100%; /*#TODO Check this height in main later*/
+    scroll-behavior: smooth;
+}
+
+.wrap {
+    position: absolute;
+    top: 0;
+}
+
+.upper {
+    position: relative;
+    top: -40px; /*#TODO I have no idea why I need this fix*/
+    background-color: blue;
     background-image: url(img/pexels-photo-66997.jpeg);
     background-size: cover;
-    height: 100vh;
-    overflow: hidden;
+    height: 95vh;
+    min-height: 600px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
 }
 
 h1 {
@@ -23,7 +40,7 @@ h1 {
     text-shadow: 1px 1px 6px rgba(245, 245, 245, 0.767);
 }
 
-p {
+.upper p {
     text-align: center;
     position: relative;
     top: 120px;
@@ -38,7 +55,6 @@ p {
     animation: plane 6s infinite;
 }
 
-
 /* Plane moves from left to right, the opacity changes from 0 to 1 back to 0 */
 @keyframes plane {
     0% {transform: translate(-200px, 0); opacity: 0;}
@@ -50,17 +66,30 @@ p {
     padding: 15px;
     background-color: whitesmoke;
     width: 200px;
-    position: relative;
     margin: 0 auto;
-    top: 20%;
     text-align: center;
     border-radius: 25px;
     box-shadow: 2px 2px 8px black;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.discover {
+    position: relative;
+    top: 120px;
     transition: -webkit-transform 0.4s;
     animation: fadeIn 4s;
     z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; top: 170px}
+    to {opacity: 1;}
 }
 
 .button:hover {
@@ -68,20 +97,129 @@ p {
     transition: 0.5s;
 }
 
-@keyframes fadeIn {
-    from {opacity: 0; top: 35%}
-    to {opacity: 1;}
+.left {
+    width: 40%;
+    padding: 80px 40px 40px;
+    float: left;
+}
+
+.left p {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+/* ANIMATION IMAGES AND ANIMATION */
+.animation {
+    width: 40%;
+    float: left;
+}
+
+.mountainDiv {
+    padding-top: 200px;
+    transform: scale(0.9);
+}
+
+.bird {
+    position: relative;
+}
+
+.bird div {
+    position: absolute;
+    width: 70px;
+    height: 70px;  
+    background-image: url(img/tan-antique-vintage-paper-texture-2_A50.png);
+    background-blend-mode: overlay;
+}
+
+.bird-part {
+    animation: birdAnimation 3s ease;
+    animation-play-state: paused;
 }
 
 
+.bird-part1 {
+    background-color: rgb(116, 116, 151);
+    transform: rotate(12deg) translate(200px, 200px);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    z-index: 10;
+}
+
+.bird-part2 {
+    background-color: rgb(93, 93, 136);
+    transform: translate(178px, 187px) scale(0.7) rotate(110deg) ;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    z-index: 9;
+}
+
+.bird-part3 {
+    background-color: rgb(73, 73, 109);
+    transform: translate(234px, 231px) scale(1.3) rotate(-70deg) ;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    z-index: 8;
+}
+
+.bird-part4 {
+    background-color: rgb(57, 57, 85);
+    transform: translate(235px, 244px) scale(1.3) rotate(196deg) ;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    z-index: 7;
+}
+
+.bird-part5 {
+    background-color: rgb(57, 57, 85);
+    transform: translate(140px, 180px) scale(1) rotate(20deg) ;
+    -webkit-clip-path: polygon(61% 15%, 94% 57%, 63% 89%, 15% 64%, 18% 11%);
+    clip-path: polygon(61% 15%, 94% 57%, 63% 89%, 15% 64%, 18% 11%);
+    z-index: 7;
+}
+
+.bird-part6 {
+    background-color: rgb(190, 147, 98);
+    transform: translate(120px, 160px) scale(0.5) rotate(115deg) ;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    z-index: 6;
+}
+
+.bird-part7 {
+    background-color:  rgb(34, 34, 56);
+    transform: translate(190px, 190px) scale(1.7, 1.9) rotate(19deg) ;
+    -webkit-clip-path: polygon(100% 1%, 84% 56%, 41% 91%, 15% 64%, 41% 16%);
+    clip-path: polygon(100% 1%, 84% 56%, 41% 91%, 15% 64%, 41% 16%);
+    z-index: 6;
+}
+
+@keyframes birdAnimation {
+    0% {transform: translate(220px, 680px) scale(0.2)}
+}
+
+.break-free {
+    position: relative;
+    top: 600px;
+    left: 50px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
 @media screen and (max-height: 500px){
-    .button {
+    .discover {
         top: 120px;
     }
   }
 
 @media screen and (max-width: 500px){
-    .button {
+    .discover {
         top: 120px;
     }
   }
