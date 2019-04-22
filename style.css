@@ -1,19 +1,72 @@
+:root {
+    --frameSize: 250px;
+}
+
+html, body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titleBox {
+    margin: 0 !important;
+    color: white;
+    padding-top: 10px;
+    background-color: rgb(112, 134, 161);
+    width: 100%;
+    background-image: url(img/pexels-photo.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position-y: -140px;
+    outline: 1px solid rgb(255, 255, 255);
+    outline-offset: -3px;
+}
+
+.titleBox h1 {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
 .box {
-    margin-right: 5px;
+    margin: 8px 4px 16px;
+    text-align: center;
+}
+
+.box h3 {
+    margin: 4px;
+    font-size: 1em;
+}
+
+.box p {
+    margin: 6px;
+    font-size: 0.7em;
+    width: var(--frameSize);
+    height: 40px;
 }
 
 iframe { 
-    width: 300px;
-    height: 300px;
+    width: var(--frameSize);
+    height: var(--frameSize);
 }
 
 a {
     font-size: 24px;
     color: rgb(33, 33, 77);
+    text-decoration: none;
+}
+
+.img {
+    width: var(--frameSize);
+    height: var(--frameSize);
+    border: 1px solid black;
+    background-position: center center;
+    background-size: cover;
 }
