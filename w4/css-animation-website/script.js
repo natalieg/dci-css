@@ -16,6 +16,12 @@ let birdPartDiv12 = document.getElementById("bird-part2-5");
 let birdPartDiv13 = document.getElementById("bird-part2-6");
 let birdPartDiv14 = document.getElementById("bird-part2-7");
 
+let mountainDiv1 = document.getElementById("mount1");
+let mountainDiv2 = document.getElementById("mount2");
+let mountainDiv3 = document.getElementById("mount3");
+let mountainDiv4 = document.getElementById("mount4");
+let mountainDiv5 = document.getElementById("mount5");
+
 let divArray = [
     birdPartDiv1,
     birdPartDiv2,
@@ -30,7 +36,12 @@ let divArray = [
     birdPartDiv11,
     birdPartDiv12,
     birdPartDiv13,
-    birdPartDiv14
+    birdPartDiv14,
+    mountainDiv1,
+    mountainDiv2,
+    mountainDiv3,
+    mountainDiv4,
+    mountainDiv5
 ];
 
 let aniActive = false;
@@ -61,4 +72,22 @@ if (window.performance) {
     console.info("window.performance works fine on this browser");
     birdPartDiv7.classList.remove("bird-wing-moving");
     birdPartDiv14.classList.remove("bird-wing-moving");
+}
+
+window.addEventListener("resize", myFunction);
+var windowWidth = 0;
+
+function myFunction() {
+    windowWidth = window.innerWidth; 
+    if(windowWidth < 500){
+        birdPartDiv7.classList.remove("bird-wing-moving");
+        birdPartDiv14.classList.remove("bird-wing-moving");
+    }
+    if((windowWidth > 500) && aniActive ){
+        setTimeout(
+            function () {
+                birdPartDiv7.classList.add("bird-wing-moving");
+                birdPartDiv14.classList.add("bird-wing-moving");
+            }, 6000);
+    }
 }

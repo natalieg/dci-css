@@ -2,10 +2,14 @@
 :root {
     --bird-position-h: -70px;
     --bird-position-w: 100px;
+    --mountain-animation-time: 40s;
+    --mountain-animation-time2: 38s;
+    --mountain-animation-time3: 36s;
+    --mountain-animation-time4: 34s;
 }
 
 html, body {
-    background-color: white;
+    /* background-color: white; */
     margin: 0;
     overflow-x: hidden;
     height: 100%; /*#TODO Check this height in main later*/
@@ -106,7 +110,7 @@ a {
     padding: 20px 20px 20px;
     margin: 60px 20px 20px;
     float: left;
-    background-color: rgba(255, 255, 255, 0.637);
+    background-color: rgba(255, 255, 255, 0.795);
 }
 
 .left p {
@@ -117,7 +121,8 @@ a {
 .left h4 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
 }
 
 /* ANIMATION IMAGES AND ANIMATION */
@@ -244,12 +249,100 @@ a {
 #lowerPage {
     overflow:hidden;
     /* background-color: blue; */
-    background-image: url(img/montaintravel.png);
-    background-position: center 40vh;
+    /* background-image: url(img/montaintravel.png);
+    background-position: center 80px;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
+
+/* MOUNTAINS */
+
+.lower {
+    margin-top: 300px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.mountains {
+    position: absolute;
+    background-image: linear-gradient(white, rgb(226, 159, 81), rgb(243, 115, 115));
+    height: 50vh;
+    width: 120vw;
+    z-index: -1;
+    bottom: 0;
+}
+
+.mountainRow {
+    position: absolute;
+    bottom: 0;
+    height: inherit;
+    width: inherit;
+    background-position: 0 bottom;
+    background-size: cover;
+    background-repeat: repeat-x;
+    /* border: 1px solid black; */
+}
+
+.mountRow1 {
+    background-image: url(mountain/m1.png);
+    animation: mountain1 var(--mountain-animation-time) linear infinite;
+    animation-play-state: paused;
+}
+
+.mountRow2 {
+    background-image: url(mountain/m1.png);
+    animation: mountain1 var(--mountain-animation-time) linear infinite;
+    left: -150vw;
+    /* border: 1px solid red; */
+    animation-play-state: paused;
+}
+
+.mountRow3 {
+    background-image: url(mountain/m2.png);
+    animation: mountain2 var(--mountain-animation-time2) linear infinite;
+    animation-play-state: paused;
+}
+
+.mountRow4 {
+    background-image: url(mountain/m3.png);
+    animation: mountain4 var(--mountain-animation-time3) linear infinite;
+    left: 70vw;
+    /* border: 1px dashed darkblue; */
+    animation-play-state: paused;
+}
+
+@keyframes mountain4 {
+    0% {transform: translate(-170vw,0)}
+    /* 50% {transform: translate(0,0)} */
+    100% {transform: translate(130vw,0)}
+}
+
+.mountRow5 {
+    background-image: url(mountain/m4.png);
+    animation: mountain5 var(--mountain-animation-time4) linear infinite;
+    left: 100vw;
+    /* border: 1px dashed darkblue; */
+    animation-play-state: paused;
+}
+
+@keyframes mountain5 {
+    0% {transform: translate(-200vw,0)}
+    /* 50% {transform: translate(0,0)} */
+    100% {transform: translate(100vw,0)}
+}
+
+@keyframes mountain1 {
+    0% {transform: translate(-100vw,0)}
+    /* 50% {transform: translate(0,0)} */
+    100% {transform: translate(200vw,0)}
+}
+
+@keyframes mountain2 {
+    0% {transform: translate(-100vw,0)}
+    /* 50% {transform: translate(0,0)} */
+    100% {transform: translate(200vw,0)}
+}
 
 /* RESPONSIVE */
 
@@ -269,4 +362,8 @@ a {
     .animation {
         display: none;
     }
+    .mountains {
+        display: none;
+    }
+
   }
