@@ -1,0 +1,114 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+div, p, h2 {
+    padding: 10px;
+}
+
+div p {
+    background-color: rgb(122, 39, 39);
+    color: white;
+}
+
+div p:nth-child(odd) {
+    background-color: rgb(122, 39, 39);
+    color: white;
+    animation: ani1 3s infinite;
+}
+
+@keyframes ani1 {
+    0% {transform: scale(0.5)}
+    50% {transform: scale(1)}
+    100% {transform: scale(0.5)}
+}
+
+div>p {
+    font-size: 1.5em;
+    background-color: rgba(71, 146, 71, 0.89);
+}
+
+div + p {
+    background-color: yellow;
+    color: black;
+}
+
+.mother {
+    background-color: rgb(214, 200, 200);
+}
+
+div {
+    border: 1px dashed rgba(109, 109, 109, 0.664);
+}
+
+p ~ h2 {
+    background-color: rgb(79, 79, 126);
+    color: white;
+}
+
+a {
+    padding: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: wheat;
+    color: black;
+}
+
+a:hover {
+    background-color: rgb(97, 97, 136);
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+a:visited {
+    background-color: black;
+    color: white;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+}
+
+input:focus {
+    background-color: rgb(151, 184, 133);
+}
+
+.hoverDiv>p {
+    background-color: blueviolet;
+    display: none;
+}
+
+.hoverDiv:hover p{
+    display: block;
+}
+
+.mother p:first-child{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(143, 66, 66);
+}
+
+.mother p:last-child{
+    background-color: rgb(238, 185, 39);
+    color: black;
+}
+
+ p:last-child {
+    border: 2px dashed red;
+}
+
+body>p:nth-last-child(2) {
+    border: 10px dotted violet;
+}
+
+p:nth-child(odd){
+    background: linear-gradient(rgba(255, 255, 31, 0.801), rgb(49, 161, 49));
+    /* background-image: -moz-linear-gradient(yellow, blue); */
+}
+
+:not(.mother){
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 20px;
+}

@@ -2,8 +2,10 @@
 :root {
     --color: lawngreen;
     --animationTime: 4s;
-    --divTop: 300px;
+    --aniBez: cubic-bezier(.06,.52,.19,.65);
+    --divTop: 200px;
     --divLeft: 200px;
+    background: black;
 }
 .square {
     position: absolute;
@@ -12,7 +14,7 @@
     width: 100px;
     height: 100px;
     clip-path: polygon(50px 0,50px 0, 100px 50px, 50px 100px, 0px 50px);
-    animation: color var(--animationTime) infinite;
+    animation: color var(--animationTime) var(--aniBez)  infinite;
 }
 
  .hello {
@@ -26,7 +28,7 @@
     height:  var(--divTop);
     /* background-image: url(img/flower3.jpeg); */
     background-color: rgb(229, 233, 25);
-    animation: move1 var(--animationTime) infinite;
+    animation: move1 var(--animationTime) var(--aniBez) infinite;
 }
 
 @keyframes move1 {
@@ -39,7 +41,7 @@
     height: 100px;
     /* background-image: url(img/flower3.jpeg); */
     background-color: rgb(119, 175, 63);
-    animation: move2 var(--animationTime) infinite;
+    animation: move2 var(--animationTime) var(--aniBez) infinite;
 }
 
 @keyframes move2 {

@@ -1,6 +1,11 @@
 
+:root {
+    --bird-position-h: -70px;
+    --bird-position-w: 100px;
+}
+
 html, body {
-    background-color: aliceblue;
+    background-color: white;
     margin: 0;
     overflow-x: hidden;
     height: 100%; /*#TODO Check this height in main later*/
@@ -61,6 +66,7 @@ h1 {
 
 .button {
     padding: 15px;
+    background-color: rgb(163, 194, 190);
     background-color: whitesmoke;
     width: 200px;
     margin: 0 auto;
@@ -69,6 +75,7 @@ h1 {
     box-shadow: 2px 2px 8px black;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: opacity 3s;
 }
 
 .discover {
@@ -96,8 +103,10 @@ a {
 
 .left {
     width: 40%;
-    padding: 80px 40px 40px;
+    padding: 20px 20px 20px;
+    margin: 60px 20px 20px;
     float: left;
+    background-color: rgba(255, 255, 255, 0.637);
 }
 
 .left p {
@@ -123,8 +132,18 @@ a {
     transform: scale(0.9);
 }
 
-.bird {
+#bird1 {
     position: relative;
+    top: -250px;
+    left: -120px;
+}
+
+
+#bird2 {
+    position: relative;
+    top: -70px;
+    left: 100px;
+    transform: scale(0.5);
 }
 
 .bird div {
@@ -151,7 +170,7 @@ a {
 
 .bird-part2 {
     background-color: rgb(93, 93, 136);
-    transform: translate(178px, 187px) scale(0.7) rotate(110deg) ;
+    transform: translate(178px, 187px) scale(0.7) rotate(110deg);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%);
     z-index: 9;
@@ -183,30 +202,53 @@ a {
 
 .bird-part6 {
     background-color: rgb(190, 147, 98);
-    transform: translate(120px, 160px) scale(0.5) rotate(115deg) ;
+    transform: translate(120px, 162px) scale(0.5) rotate(115deg) ;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%);
     z-index: 6;
 }
 
+/* Wings */
 .bird-part7 {
     background-color:  rgb(34, 34, 56);
     transform: translate(190px, 190px) scale(1.7, 1.9) rotate(19deg) ;
     -webkit-clip-path: polygon(100% 1%, 84% 56%, 41% 91%, 15% 64%, 41% 16%);
     clip-path: polygon(100% 1%, 84% 56%, 41% 91%, 15% 64%, 41% 16%);
     z-index: 6;
+   }
+
+.bird-wing-moving {
+    background-color:  rgb(34, 34, 56);
+    transform: translate(190px, 190px) scale(1.7, 1.9) rotate(19deg);
+    -webkit-clip-path: polygon(100% 1%, 84% 56%, 41% 91%, 15% 64%, 41% 16%);
+    clip-path: polygon(100% 1%, 84% 56%, 41% 91%, 15% 64%, 41% 16%);
+    z-index: 6;
+    animation: wingAnimation 2s infinite;
+}
+
+@keyframes wingAnimation {
+    50% {transform: translate(190px, 190px) scale(1.8)};   
 }
 
 @keyframes birdAnimation {
-    0% {transform: translate(450%, 650%) scale(0.2)}
+    0% {transform: translate(150vw, 65vh) scale(0.1)}
 }
 
 .break-free {
     position: relative;
-    top: 400px;
-    left: 100px;
+    top: 30vh;
+    left: 10%;
     cursor: pointer;
-   }
+}
+
+#lowerPage {
+    overflow:hidden;
+    /* background-color: blue; */
+    background-image: url(img/montaintravel.png);
+    background-position: center 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 /* RESPONSIVE */
@@ -220,5 +262,11 @@ a {
 @media screen and (max-width: 500px){
     .discover {
         top: 120px;
+    }
+    .left {
+        width: 80%;
+    }
+    .animation {
+        display: none;
     }
   }
