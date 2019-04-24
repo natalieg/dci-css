@@ -1,0 +1,134 @@
+body {
+    background-color: ccc;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(167, 33, 111);
+    margin-left: 20px;
+}
+.text {
+    padding: 50px;
+}
+
+.text::before, .text::after {
+    content: ' ';
+    width: 100%;
+    height: 40px;
+    display: block;
+    background-color: rgb(170, 147, 162);
+    background-image: url(img/nature-milky-way-galaxy-space-1376766.jpeg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    border-radius: 45px 45px 0 0; 
+}
+
+.text::after {
+    content: ' ';
+    border-radius: 0 0 45px 45px; 
+}
+
+.fas {
+    font-size: 3em;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2:before, h2:after {
+    font-size: 2em;
+    color: rgb(167, 33, 111);
+}
+
+h2::before {
+    /* content: "**"; */
+    content: open-quote;
+}
+
+h2::after {
+    content: close-quote;
+}
+
+.article {
+    margin: 0;
+    padding: 10px 40px;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.info {
+    text-decoration: underline;
+}
+
+.article a {
+    text-decoration: none;
+    position: relative;
+}
+
+.article a::before{
+    position: absolute;
+    bottom: 100%;
+    left: -20px;
+    width: 100px;
+    /* white-space: nowrap; */
+    content: attr(info);
+    background-color: rgb(167, 33, 111);
+    color: white;
+    padding: 6px;
+    border-radius: 3px;
+    visibility: hidden;
+    transform: scale(0);
+    transition: ease-in-out 0.2s;
+}
+
+
+
+.article a:hover::before {
+    visibility: visible;
+    transform: scale(1);
+    transition: ease-in 0.2s;
+    display: inline;
+}
+
+.center {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(167, 33, 111);
+    border: 2px solid rgb(167, 33, 111);
+    color: white;
+    font-size: 1.2em;
+    padding: 12px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.btn-hover:hover {
+    background-color: rgba(167, 33, 111, 0.096);
+    color: rgb(167, 33, 111);
+    transition: 0.5s;
+}
+
+.btn-hover::after {
+    content: "info about the hover button";
+    position: absolute;
+    left: 0;
+    bottom: 110%;
+    font-size: 0.9em;
+    padding: 5px 5px 20px;
+    color: white;
+    background-color: rgb(167, 33, 111);
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 84%, 75% 85%, 55% 100%, 54% 85%, 0 85%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 84%, 75% 85%, 55% 100%, 54% 85%, 0 85%);
+}
+.btn-hover:hover::after {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.8s;
+}
