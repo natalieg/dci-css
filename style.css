@@ -69,4 +69,28 @@ a {
     border: 1px solid black;
     background-position: center center;
     background-size: cover;
+    overflow: hidden;
+}
+
+.img>img {
+    width: 100%;
+}
+
+/* Images of Websites */
+#w5-btnAniImg {
+    background-image: url(img/overviewPreview/button-animation.jpg);
+}
+
+#w5-combiImg {
+    background-image: url(img/overviewPreview/css-selectors.jpg);
+}
+
+#w5-dropDown {
+    background-image: url(img/overviewPreview/dropDownMenu.jpg);
+    background-size: 170%;
+    background-position: top left;
+}
+
+#w5-pseudo {
+    background-image: url(img/overviewPreview/pseudoSelector.jpg);
 }
