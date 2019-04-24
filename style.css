@@ -36,7 +36,7 @@ html, body {
 }
 
 .box {
-    margin: 8px 4px 16px;
+    margin: 8px 4px 40px;
     text-align: center;
 }
 
@@ -93,4 +93,64 @@ a {
 
 #w5-pseudo {
     background-image: url(img/overviewPreview/pseudoSelector.jpg);
+}
+
+#w4-cubeTransColImg {
+    background-image: url(img/overviewPreview/cubetranscolor.jpg);
+}
+
+#w4-polaImg {
+    background-image: url(img/overviewPreview/4-polaroid.jpg);
+}
+
+#w4-cssBirdImg {
+    background-image: url(img/overviewPreview/4-cssbird.jpg);
+}
+
+#w4-bgGradImg {
+    background-image: url(img/overviewPreview/4-gradientBackground.jpg);
+}
+
+#w3-targetImg {
+    background-image: url(img/overviewPreview/3-target.jpg);
+}
+
+#w3-jellyFloatImg {
+    background-image: url(img/overviewPreview/3-jelly.jpg);
+}
+
+#w3-flexboxwebImg {
+    background-image: url(img/overviewPreview/3-flexweb.jpg);
+}
+
+#w3-flexBox {
+    background-image: url(img/overviewPreview/3-flexbox.jpg);
+}
+
+#w3-paddingImg {
+    background-image: url(img/overviewPreview/3-paddingAndMore.jpg);
+}
+
+#travelResoImg {
+    background-image: url(img/overviewPreview/travelPageRespnsive.jpg);
+}
+
+#respHtml5Img {
+    background-image: url(img/overviewPreview/responsiveHtml5.jpg);
+}
+
+#respGridImg {
+    background-image: url(img/overviewPreview/respoGrid.jpg);
+}
+
+#respHtmlImg {
+    background-image: url(img/overviewPreview/responsiveHtml.jpg);
+}
+
+#respImgImg {
+    background-image: url(img/overviewPreview/respoImg.jpg);
+}
+
+#firstProjectImg {
+    background-image: url(img/overviewPreview/1-firstProject.jpg);
 }
