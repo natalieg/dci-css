@@ -190,7 +190,7 @@ h1 {
 }
 
 .imgContainer:hover .img {
-    height: 200px;
+    height: 400px;
 }
 
 .imgContainer>.img {
