@@ -1,13 +1,78 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgb(180, 163, 139);
+    background-image: url(pexels-photo-673857.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .main, .container {
+    position: relative;
     width: 50%;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.753);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.main {
+    margin-top: 50px; 
+    height: 220px;
+}
+
+.main h2 {
+    text-align: center;
 }
 
 .input1 {
     position: absolute;
     left: 40%;
+}
+
+.container {
+    text-align: center;
+}
+
+.container label {
+    display: block;
+}
+
+ input:not(.btn) {
+    background-color: rgb(184, 196, 236);
+    border: 1px solid white;
+    width: 50%;
+}
+
+.container input, .container textarea {
+    background-color: rgb(184, 196, 236);
+    border: 1px solid white;
+    width: 80% !important;
+}
+
+input:focus, textarea:focus {
+    background-color: rgb(252, 197, 96);
+}
+
+.btn {
+    padding: 10px;
+    position: absolute;
+    background-color: rgb(255, 196, 112);
+    border: 1px solid white;
+    border-radius: 4px;
+
+}
+
+.btn1 {
+    right: calc(15% + 50px);
+}
+
+.btn2 {
+    right: 10%;
+}
+
+@media only screen and (max-width:550px) {
+    .main, .container {
+        width: 95%;
+    }
 }
