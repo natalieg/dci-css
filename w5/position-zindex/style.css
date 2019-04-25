@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+
+.parent {
+    background-color: rgb(218, 124, 124);
+    height: 30vh;
+    width: 30vw;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.children {
+    background-color: rgba(90, 90, 117, 0.795);
+
+}
+
+.child {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 150px 0 0 0;
+    border: 5px dotted pink;
+    transform: translate(10px, 10px);
+    z-index: 4;
+}
+.child:hover {
+    transform: scale(1.5) translate(-15px, -15px);
+    transition: -webkit-transform 2s;
+}
+
+
+.child2 {
+    background-color: rgba(223, 222, 137, 0.459);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    outline: 1px solid #FDF3D0;
+    outline-offset: -10px;
+    z-index: -2;
+}
+
+.coverDiv {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 70px;
+    right: 0px;
+    background-color: rgb(165, 209, 165);
+    z-index: 1;
+}
+
+p {
+    position: relative;
+    z-index: 2;
+}
+
+.text {
+    position: relative;
+    z-index: 3;
+}
+
+
+.divTest {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(167, 23, 23);
+    border: 1px solid black;
+    position: relative;
+    left: 50vw;
+    top: 5vw;
+}
+
+.div1 {
+    background-color: rgb(167, 23, 23);
+    top: -50px;
+    z-index: 1;
+}
+
+.div2 {
+    background-color: rgb(212, 209, 20);
+    top: 15x;
+    z-index: 2;
+}
+
+.div3 {
+    background-color: rgb(47, 167, 23);
+    top: 70px;
+    z-index: -3;
+}
+
+.ranText {
+    position: relative;
+    z-index: 2;
+    border: 2px solid green;
+    left: 50px;
+    background-color: rgb(231, 219, 219);
+}
+
+.text2 {
+    left: 51vw;
+    top: -100px;
+    width: 120px;
+    padding: 4px;
+}
+
+.border2 {
+    border: 2px solid red;
+    padding: 0 40px;
+}

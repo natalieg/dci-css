@@ -1,0 +1,61 @@
+:root {
+    --position: 80px;
+    --imgSize: 400px;
+    --blur: 4px
+}
+
+.main>img {
+    position: absolute;
+    top: 0;
+    width: var(--imgSize);
+    z-index: 1;
+    animation: animation 5s infinite;
+}
+
+#img2 {
+    top: var(--position);
+    left: var(--position);
+    animation-delay: 1s;
+}   
+
+#img3 {
+    top: calc(var(--position) * 2);
+    left: calc(var(--position) * 2);
+    animation-delay: 2s;
+}
+
+#img4 {
+    top: calc(var(--position) * 3);
+    left: calc(var(--position) * 3);
+    animation-delay: 3s;
+}
+
+#img5 {
+    top: calc(var(--position) * 4);
+    left: calc(var(--position) * 4);
+    animation-delay: 4s;
+}
+
+.hoverImg:hover {
+    z-index: 10;
+    border-radius: 30%;
+    transform: scale(1.3);
+    transition: border-radius 1s, transform 1s;
+}
+
+.main:hover > *:not(:hover) {
+  filter: blur(var(--blur)) grayscale(80%);
+  transition: 2s;
+}
+
+.main:hover img {
+    animation-play-state: paused;
+}
+
+@keyframes animation {
+    50% {transform: scale(1.1)}
+    70% {transform: scale(1.1)}
+    90% {transform: scale(1)}
+}
+
+
