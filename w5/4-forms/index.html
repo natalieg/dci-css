@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Forms</title>
 </head>
+
 <body>
-    <div class="main">
+    <!-- <div class="main">
         <h2>Account Information</h2>
         <form action="process.html">
             First Name
@@ -24,20 +28,51 @@
             <input class="btn btn1" type="submit" value="Send">
             <input class="btn btn2" type="reset" name="" id="">
         </form>
-    </div>
+    </div> -->
     <div class="container">
-        <h2>Contact Form</h2>
-        <p>Please fill the form to send a message to us</p>
-        <form action="">
-            <label for="">Name</label>
-            <input type="text" name="fullname"><br>
-            <label for="">E-Mail Adress</label>
-            <input type="email"><br><br>
+        <h2><i class="fas fa-file-signature"></i> Contact Form</h2>
+        <p class="info">Please fill the form to send a message to us</p>
+        <div class="line"></div>
+        <form action="name">
+            <p>
+                <label for="fullname">Name</label>
+                <input class="textInput" type="text" name="fullname">
+            </p>
+            <p>
+                <label for="email">E-Mail Adress</label>
+                <input id="emailInput" class="textInput" name="email" type="email" placeholder="Please enter your E-Mail" required>
+            </p>
+            <p>
+                <label for="date">Date of Birth</label>
+                <input class="textInput" name="date" type="date">
+            </p>
+            <p>
+                <label class="genderLabel" for="gender">Gender:</label>
+                <input class="radio" type="radio" name="gender" value="male"><span>Male</span>
+                <input class="radio" type="radio" name="gender" value="female"><span>Female</span>
+                <input class="radio" type="radio" name="gender" value="other"><span>Other</span>
+            </p>
+            <p>
+                <label for="">Your Location</label>
+                <select name="location" id="location">
+                    <option value="1">Berlin</option>
+                    <option value="2" selected="selected">Hamburg</option>
+                    <option value="3">Düsseldorf</option>
+                    <option value="4">Köln</option>
+                </select>
+            </p>
 
             <label for="">Message</label>
-            <textarea name="message" id="" cols="30" rows="10"></textarea>
-
+            <textarea name="message" id="" cols="30" rows="5"></textarea>
+            <div class="line"></div>
+            <div class="checkOptions">
+                <input class="checkbox" type="checkbox" name="" id=""><p>I agree to sell my soul</p><br>
+                <input class="checkbox" type="checkbox" name="" id=""><p>I agree to read every E-Mail that you send to me forever!! I will never unsubscribe.</p><br>
+                <input class="checkbox" type="checkbox" name="" id=""><p>Keep me informed on every change that happens. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum nemo debitis?</p>
+            </div>
+            <input id="submitBtn" type="Submit" value="Send">
         </form>
     </div>
 </body>
+
 </html>

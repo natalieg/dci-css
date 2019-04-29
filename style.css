@@ -77,6 +77,15 @@ a {
 }
 
 /* Images of Websites */
+
+#w5-form {
+    background-image: url(img/overviewPreview/w5-forms.png);
+}
+
+#w5-zindex {
+    background-image: url(img/overviewPreview/w5-zindex.png);
+}
+
 #w5-btnAniImg {
     background-image: url(img/overviewPreview/button-animation.jpg);
 }
