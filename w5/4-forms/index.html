@@ -48,9 +48,12 @@
             </p>
             <p>
                 <label class="genderLabel" for="gender">Gender:</label>
-                <input class="radio" type="radio" name="gender" value="male"><span>Male</span>
-                <input class="radio" type="radio" name="gender" value="female"><span>Female</span>
-                <input class="radio" type="radio" name="gender" value="other"><span>Other</span>
+                <input class="radio" type="radio" name="gender" value="male" id="radioMale">
+                <label class="radioLabel" for="radioMale">Male</label>
+                <input class="radio" type="radio" name="gender" value="female" id="radioFemale">
+                <label class="radioLabel" for="radioFemale">Female</label>
+                <input class="radio" type="radio" name="gender" value="other" id="radioOther">
+                <label class="radioLabel" for="radioOther">Other</label>
             </p>
             <p>
                 <label for="">Your Location</label>
@@ -66,11 +69,11 @@
             <textarea name="message" id="" cols="30" rows="5"></textarea>
             <div class="line"></div>
             <div class="checkOptions">
-                <input class="checkbox" type="checkbox" name="" id=""><p>I agree to sell my soul</p><br>
-                <input class="checkbox" type="checkbox" name="" id=""><p>I agree to read every E-Mail that you send to me forever!! I will never unsubscribe.</p><br>
-                <input class="checkbox" type="checkbox" name="" id=""><p>Keep me informed on every change that happens. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum nemo debitis?</p>
+                <input class="checkbox" type="checkbox" name="" id="check1"><p>I agree to sell my soul</p><br>
+                <input class="checkbox" type="checkbox" name="" id="check2"><p>I agree to read every E-Mail that you send to me forever!! I will never unsubscribe.</p><br>
+                <input class="checkbox" type="checkbox" name="" id="check3"><p>Keep me informed on every change that happens. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum nemo debitis?</p>
             </div>
-            <input id="submitBtn" type="Submit" value="Send">
+            <button id="submitBtn" type="submit">Submit  <i class="fas fa-paper-plane"></i></button> 
         </form>
     </div>
 </body>
