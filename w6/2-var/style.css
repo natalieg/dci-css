@@ -85,8 +85,12 @@ p {
     padding-top: 10px;
 }
 
-.house1, .house5, .houseLast {
+.house4 {
     flex-grow: 1;
+}
+
+.house1, .house5, .house8, .houseLast {
+    flex-grow: 2;
     background-color: green;
 }
 
@@ -117,6 +121,8 @@ p {
 .house6 {background-image: url(img/house6.jpeg);}
 .house7 {background-image: url(img/house7.jpeg);}
 .house8 {background-image: url(img/house8.jpeg);}
+.house9 {background-image: url(img/house11.jpeg);}
+.house10 {background-image: url(img/house10.jpeg);}
 .houseLast {background-image: url(img/house9.jpeg);}
 
 
