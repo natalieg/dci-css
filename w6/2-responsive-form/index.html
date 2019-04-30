@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>sing up here</h2>
+        <form method="get" action="thanks.html">
+            <label>
+                First Name
+                <input type="text" name="name">
+            </label>
+            <label>Last Name
+                <span>*</span>
+                <input type="text" name="name" required>
+            </label>
+            <label>Email
+                <span>*</span>
+                <input type="email" name="email" placeholder="someone@gmail.com" required>
+            </label>
+            <label>Username
+                <span>*</span>
+                <input type="username" name="username" required>
+            </label>
+            <label>Password
+                <span>*</span>
+                <input type="password" name="password" required>
+            </label>
+            <input class="btn center-x" type="submit" value="Sign Me Up" class="submitBtn">
+        </form>
+    </div>
+</body>
+
+</html>
