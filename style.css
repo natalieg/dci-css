@@ -84,17 +84,11 @@ a {
 
 /* Images of Websites */
 
-#w5-form {
-    background-image: url(img/overviewPreview/w5-forms.png);
-}
-
-#w5-zindex {
-    background-image: url(img/overviewPreview/w5-zindex.png);
-}
-
-#w5-btnAniImg {
-    background-image: url(img/overviewPreview/button-animation.jpg);
-}
+#w6-holiday {background-image: url(img/overviewPreview/6-ferien.jpg);}
+#w6-form {background-image: url(img/overviewPreview/6-resp-form.jpg);}
+#w5-form {background-image: url(img/overviewPreview/w5-forms.png);}
+#w5-zindex {background-image: url(img/overviewPreview/w5-zindex.png);}
+#w5-btnAniImg {background-image: url(img/overviewPreview/button-animation.jpg);}
 
 #w5-combiImg {
     background-image: url(img/overviewPreview/css-selectors.jpg);
