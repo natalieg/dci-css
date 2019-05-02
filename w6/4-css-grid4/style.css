@@ -49,20 +49,28 @@ body {
     overflow: hidden;
     white-space: nowrap;
     line-height: 40px;
+    backdrop-filter: invert(70%);
 }
 
 .header {
     grid-column: span 7;
-    font-size: 8vh;
+    font-size: calc(2vh + 30px);
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
     font-family: "CapistranoBFW01-Regular", Verdana, Tahoma;
     align-items: flex-end;
+    min-height: 50px;
 }
 
 .number {
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.733);
+}
+
+.number:hover {
+    font-size: 2rem;
+    background-color: rgba(250, 167, 43, 0.616) !important;
+    transition: 0.4s;
 }
 
 .grid .number:nth-child(7n + 1), .day:nth-child(8){
@@ -74,9 +82,10 @@ body {
 }
 
 .lastMonth, .nextMonth {
-    color: rgba(0, 0, 0, 0.308);
+    /* color: rgba(0, 0, 0, 0.308); */
     font-size: 1rem;
     border: 1px dashed white;
+    opacity: 0.5;
 }
 
 .grid div:nth-last-child(1){
