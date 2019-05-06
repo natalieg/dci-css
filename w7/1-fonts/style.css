@@ -1,0 +1,92 @@
+body {
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-variant: small-caps; */
+}
+
+.car {
+    transform: scale(0.4);
+}
+
+.car i:nth-child(1){
+    color: green;
+}
+
+.car i:nth-child(2){
+    color: rgb(173, 17, 11);
+}
+
+.car i:nth-child(4){
+    color: rgb(116, 136, 139);
+}
+
+.car i:nth-child(5){
+    color: rgb(94, 85, 85);
+}
+
+.got i:nth-child(2) {
+    color: rgb(219, 183, 93);
+}
+.got i:nth-child(3) {
+    color: rgb(71, 94, 41);
+}
+.got i:nth-child(4) {
+    color: rgb(189, 44, 25);
+}
+
+.crow i:nth-child(1){font-size: 0.5em;}
+.crow i:nth-child(2){font-size: 0.7em;}
+.crow i:nth-child(3){font-size: 0.9em;}
+
+ .italic {
+    font-variant: small-caps;
+ }
+ 
+ .font-italic {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+ }
+ .my-font {
+    font-family: 'Parisienne', cursive;
+ }
+ 
+ .google-font {
+    font-family: 'ZCOOL KuaiLe', cursive;
+ }
+ 
+ .ru-font {
+    font-family: 'Caveat', cursive;
+ }
+
+ .sofia {
+     font-family: 'my-new-font';
+ }
+
+ .quicksand { 
+    font-family: 'Quicksand', sans-serif;
+ }
+
+ .indie {
+   font-family: 'Indie Flower', cursive;
+ }
+
+ .questrial {
+   font-family: 'Questrial', sans-serif;
+ }
+
+ .amatic {
+    font-family: 'Amatic SC', cursive;
+ }
+
+ .josefin {
+    font-family: 'Josefin Slab', serif;
+ }
+
+ .reenie {
+    font-family: 'Reenie Beanie', cursive;
+ }
+ 
+ @font-face {
+    src:url(Sofia-Regular.ttf);
+    font-family: my-new-font;
+ }

@@ -9,6 +9,24 @@ header, footer {
     padding: 15px;
 }
 
+main, section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 100;
+    letter-spacing: 0.5em;
+}
+
+h1, h2 {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+summary>h2 {
+    display: inline;
+}
+
 nav {
     background: rgb(184, 154, 154);
     border-bottom: 1px solid black;
@@ -27,9 +45,38 @@ nav a {
     /* float: left; */
 }
 
+nav span {
+   position: relative;
+   top: -15px;
+}
+
 nav a:hover {
     background-color: #333;
     color: beige;
+}
+
+ nav a::before{
+    position: absolute;
+    top: 192px;
+    /* width: 100px; */
+    content: attr(info);
+    background-color: #333;
+    color: white;
+    padding: 6px 18px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 25px;
+    visibility: hidden;
+    transform: scale(0);
+    transition: ease-in-out 0.2s;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+nav a:hover::before {
+    visibility: visible;
+    transform: scale(1) translate(-16px, 0);
+    transition: ease-in 0.2s;
+    display: inline;
 }
 
 article, p {
@@ -54,10 +101,8 @@ section, details {
             width: 100%;
             display: block;
         }
+        nav a:hover::before {
+            visibility: hidden;
+        }
    } 
 
-   /* @media only screen and (max-height:500px) {
-    main {
-        height: 350px;
-    } 
-}*/
