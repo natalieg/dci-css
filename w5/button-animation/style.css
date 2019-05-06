@@ -2,15 +2,19 @@ html, body {
     margin: 0;
 }
 
-body {
-   
+
+.banner {
+    background-color: #2C4439;
+    height: 150px;
 }
 
 .nav {
     background-color: #EEBEA8;
     /* border-top: 3px solid white; */
     display: flex;
+    position: sticky;
 }
+
 
 .nav a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -30,7 +34,8 @@ body {
     background-blend-mode: overlay;
     background-color: rgb(111, 122, 117);
     padding: 70px;
-    height: 70vh;
+    height: 40vw;
+    min-height: 300px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -38,7 +43,7 @@ body {
 h1 {
     text-transform: uppercase;
     color: white;
-    font-size: 2.5em;
+    font-size: 7vw;
     animation: ani1 2s 1;
     margin: 0;
 }
@@ -49,7 +54,7 @@ h1 {
 
 .belowh1 {
     margin: 5px auto 40px;
-    
+    font-size: 3vw;
 }
 
 h3 {
@@ -111,28 +116,19 @@ h3 {
 }
 
 .left {
-    width: 50%;
+    width: 40%;
     padding: 30px;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
+    font-size: 0.8em;
 }
 
 .right {
     width: 40%;
 }
 
-
-.rightLogo {
-    margin-top: 100px;
-    height: 70vh;
-    background-image: url(img/texture.jpeg);
-    background-blend-mode: overlay;
-    background-position: center center;
-    background-size: cover;
-    background-color: rgb(71, 52, 56);
-} 
-
-.rightLogo img {
-    width: 100%;
-    margin: auto;
+.hello {
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    font-size: 40px;
 }
