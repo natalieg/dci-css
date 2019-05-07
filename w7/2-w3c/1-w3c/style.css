@@ -31,6 +31,16 @@ body {
     font-size: 2em !important;
 }
 
+.tip {
+    width: 250px;
+    font-family: "Indie";
+    font-size: 1.3em;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    padding: 5px;
+    line-height: 35px;
+}
+
 #gallery {
     margin-top: 10px;
     padding: 20px;
@@ -125,6 +135,11 @@ h1 {
 @font-face {
     src:url(font/AmaticSC-Regular.ttf);
     font-family: "amatic";
+ }
+
+ @font-face {
+    src:url(font/IndieFlower.ttf);
+    font-family: "Indie";
  }
 
 @media screen and (max-width: 600px){
