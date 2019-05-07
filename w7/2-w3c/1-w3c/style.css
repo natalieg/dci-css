@@ -1,0 +1,125 @@
+:root {
+    --avatar-size: 80px;
+    --thin-font: "amatic", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(243, 243, 221);
+}
+
+.nav {
+    border-top: 1px solid rgb(243, 243, 221);
+    font-family: var(--thin-font);
+    font-size: 1.5em;
+}
+
+.nav i {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.drop-button {
+    font-weight: bold;
+}
+
+.w3-dropdown-hover {
+    float: none !important;
+}
+
+.w3-large {
+    font-family: var(--thin-font);
+    font-size: 2em !important;
+}
+
+#gallery {
+    margin-top: 10px;
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#gallery img {
+    margin-bottom: 20px; 
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: var(--thin-font);
+    letter-spacing: 0.3em;
+    font-size: 3em;
+}
+
+.text {
+    margin: 10px;
+    padding: 10px;
+}
+
+#personTable {
+    width: 80%;
+    margin: 10px 10%;
+}
+
+#myList {
+    margin-bottom: 20px;
+}
+
+#myList li {
+    width: 80%;
+    margin: 10px 10%;
+    background-color: white;
+}
+
+.avatar {
+    width: var(--avatar-size) !important;
+    height: var(--avatar-size) !important;
+    padding: 0 !important;
+    margin-right: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-container button {
+    margin: 5px;
+    font-family: var(--thin-font);
+    font-size: 2.4em;
+}
+
+
+.button-container .w3-button:hover {
+    border-top-left-radius: 15px;
+    transition: .5s;
+}
+
+.footer {
+    font-family: var(--thin-font);
+    font-size: 2.4em;
+    text-align: center;
+}
+
+@font-face {
+    src:url(font/AmaticSC-Regular.ttf);
+    font-family: "amatic";
+ }
+
+@media screen and (max-width: 600px){
+    #gallery {
+        height: 100%;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .w3-button {
+        width: 100%;
+    }
+
+    .w3-dropdown-hover {
+        display: none;
+    }
+
+}

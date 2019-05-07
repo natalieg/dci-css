@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>W3css</title>
+</head>
+
+<body>
+    <div class="w3-container w3-teal">
+        <h1>W3 CSS Framework</h1>
+    </div>
+    
+    <div class="w3-bar nav w3-center w3-teal">
+
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-teal w3-hover-black drop-button">Hover Over Me!</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                    <a href="#" class="w3-bar-item w3-button">Interesting Link</a>
+                    <a href="#" class="w3-bar-item w3-button">Look at this</a>
+                    <a href="#" class="w3-bar-item w3-button">Hover Hover</a>
+            </div>
+        </div>
+
+        <button class="w3-button w3-teal w3-hover-black"><i class="fas fa-home"></i> Home</button>
+        <button class="w3-button w3-teal w3-hover-black"><i class="fas fa-envelope-open-text"></i> Contact</button>
+        <button class="w3-button w3-teal w3-hover-black"><i class="fas fa-user-friends"></i> About</button>
+        <button class="w3-button w3-teal w3-hover-black"><i class="fas fa-crow"></i> Extras</button>
+    </div>
+
+    <table id="personTable" class="w3-table w3-striped w3-border">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Garu</td>
+            <td>33</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Lucien</td>
+            <td>30</td>
+            <td>Paris</td>
+        </tr>
+
+        <tr>
+            <td>Tobias</td>
+            <td>28</td>
+            <td>Frankfurt</td>
+        </tr>
+    </table>
+
+    <ul id="myList" class="w3-ul">
+        <li id="kyle" class="w3-bar w3-card padding-16 w3-hover-teal"> 
+            <img src="img/avatar/garu.png" alt=""
+                class="w3-hide-small w3-bar-item w3-circle avatar">
+            <div class="w3-bar-item">
+                <span class="w3-large">Garu</span><br>
+                <span>Backend Developer</span>
+            </div>
+        </li>
+        <li id="lucien" class="w3-bar w3-card padding-16 w3-hover-teal"> 
+                <img src="img/avatar/daven.png" alt=""
+                    class="w3-hide-small w3-bar-item w3-circle avatar">
+                <div class="w3-bar-item">
+                    <span class="w3-large">Lucien</span><br>
+                    <span>Web Developer</span>
+                </div>
+            </li>
+            <li id="tobias" class="w3-bar w3-card padding-16 w3-hover-teal"> 
+                    <img src="img/avatar/tobi.png" alt=""
+                        class="w3-hide-small w3-bar-item w3-circle avatar">
+                    <div class="w3-bar-item">
+                        <span class="w3-large">Tobias</span><br>
+                        <span>Web Designer</span>
+                    </div>
+                </li>
+    </ul>
+
+    <div class="w3-container button-container">
+        <button class="w3-hover-black w3-button w3-teal">Contact Garu</button>
+        <button class="w3-hover-black w3-button w3-green">Contact Lucien</button>
+        <button class="w3-hover-black w3-button w3-pink">Contact Tobias</button>
+    </div>
+
+    <!-- Photo grid (modal) -->
+    <div id="gallery" class="w3-row-padding">
+        <div class="w3-half">
+            <img src="img/nature3.jpeg" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="img/pexels-photo-1028705.jpeg" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="img/pexels-photo-673857.jpeg" style="width:100%" onclick="onClick(this)" alt="">
+        </div>
+
+        <div class="w3-half">
+            <img src="img/pexels-photo-66997.jpeg" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="img/pexels-photo-1590549.jpeg" style="width:100%" onclick="onClick(this)" alt="">
+            <img src="img/pexels-photo-247599.jpeg" style="width:100%" onclick="onClick(this)" alt="">
+        </div>
+    </div>
+
+    <div class="w3-card text">
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis veritatis nam sed ab ratione eaque
+                asperiores. Praesentium ipsam id in, consequatur numquam amet voluptatum veniam facilis nemo
+                consequuntur obcaecati illo?</span><span>Facere molestiae, id ullam possimus rem excepturi quia at
+                architecto, laborum neque sequi quaerat repellendus nam ipsa in, vitae necessitatibus? Facilis,
+                provident maiores? Nihil dolores accusantium dolorem dolor voluptates neque?</span></p>
+    </div>
+    <div class="w3-container w3-teal footer">Footer</div>
+</body>
+
+</html>
