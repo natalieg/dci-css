@@ -84,6 +84,10 @@ a {
 
 /* Images of Websites */
 
+#w7-sass {background-image: url(img/overviewPreview/7-sass.jpg);}
+#w7-w3css {background-image: url(img/overviewPreview/7-w3-framework.jpg);
+    background-size: 150%;
+    background-position: top left;}
 #w6-cal {background-image: url(img/overviewPreview/6-cal.jpg);}
 #w6-holiday {background-image: url(img/overviewPreview/6-ferien.jpg);}
 #w6-form {background-image: url(img/overviewPreview/6-resp-form.jpg);}

@@ -30,6 +30,8 @@ header h1 {
 header h1 i {
   font-weight: 100;
   font-size: 2em;
+  position: relative;
+  top: 10px;
 }
 
 nav, footer {

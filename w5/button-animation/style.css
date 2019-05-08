@@ -36,6 +36,12 @@ html, body {
     letter-spacing: 1em;
 }
 
+.banner-right i {
+    font-size: 1.8em;
+    padding: 5px;
+    cursor: pointer;
+}
+
 .middle {
     text-align: center;
 }
