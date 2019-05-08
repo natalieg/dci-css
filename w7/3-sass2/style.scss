@@ -1,0 +1,61 @@
+$main-background-color: rgba(156, 192, 161, 0.781);
+$main-font-family: Arial, Helvetica, sans-serif;
+$secondary-font-family: 'Times New Roman', Times, serif;
+$georgia-font-family: Georgia, 'Times New Roman', Times, serif;
+$lucia-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+$franklin-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$base-font-size: 0.4rem;
+$font-color-blue: rgb(0, 130, 252);
+$font-color-purple: purple;
+$font-color-green: green;
+
+
+@mixin fontStyle($family, $size, $color){
+    font-family: $family;
+    font-size: $base-font-size*$size;
+    color: $color;
+}
+
+html, body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header, footer {
+    height: 10rem;
+    background-color: $main-background-color;
+    text-align: center;
+    padding-top: 2rem;
+    font-family: $main-font-family;
+}
+
+footer {
+    padding-top: 1rem;
+}
+
+main {
+    margin: .5rem;
+    .huge {
+        @include fontStyle($secondary-font-family,10,$font-color-blue);
+    }
+    .big {
+        @include fontStyle($secondary-font-family,8,$font-color-blue);
+    }
+    .medium {
+        @include fontStyle($lucia-font-family,3,$font-color-purple);
+    }
+    .middle {
+        @include fontStyle($georgia-font-family,3,$font-color-purple);
+    }
+    .small {
+        @include fontStyle($franklin-font-family,2,$font-color-green);
+    }
+    .tiny {
+        @include fontStyle($franklin-font-family,.5,$font-color-green);
+        margin-bottom: 2rem;
+    }
+}
+
