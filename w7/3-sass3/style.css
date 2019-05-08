@@ -1,35 +1,93 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  padding: 20px 40px;
 }
 
 header {
+  margin-top: 0;
+  height: 120px;
+  background-color: #476570;
+  color: white;
   text-align: center;
+}
+
+header h1 {
+  margin-top: inherit;
+  font-family: "Indie Flower", cursive;
+  font-size: 2.5em;
+  font-weight: 100;
+  letter-spacing: .2em;
+  line-height: 160px;
+}
+
+header h1 i {
+  font-weight: 100;
+  font-size: 2em;
 }
 
 nav, footer {
   text-align: center;
-  padding: 30px;
 }
 
 nav ul, footer ul {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
 }
 
 nav ul li, footer ul li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 15px 15px;
 }
 
 nav ul li a, footer ul li a {
+  padding: inherit;
   text-decoration: none;
+}
+
+nav ul li a:hover, footer ul li a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 nav {
   padding-bottom: 0;
+  background-color: #b4c8cf;
+}
+
+nav a {
+  font-size: 1.2em;
+  color: #1f1e1e;
+}
+
+nav a:hover {
+  background-color: #476570;
+  color: white;
+}
+
+footer {
+  background-color: #476570;
+  color: white;
+}
+
+footer a {
+  font-size: 2.5em;
+  color: white;
+}
+
+footer a:hover {
+  background-color: #b4c8cf;
+  color: #1f1e1e;
 }
 
 .cards {
-  width: 92%;
   margin: 0 auto;
   text-align: center;
   display: -webkit-box;
@@ -37,12 +95,25 @@ nav {
   display: flex;
 }
 
+.cards .card:nth-child(1) {
+  background-color: #604770;
+}
+
+.cards .card:nth-child(2) {
+  background-color: #6d4770;
+}
+
+.cards .card:nth-child(3) {
+  background-color: #704765;
+}
+
 .cards .card {
   width: 30vw;
   margin: 20px;
   padding: 10px;
-  background-color: #7d9199;
   color: white;
+  outline: 1px solid white;
+  outline-offset: -4px;
 }
 
 .cards .card h4 {
@@ -54,18 +125,41 @@ nav {
 }
 
 .cards .card button {
+  cursor: pointer;
   border: none;
-  padding: 8px;
-  background-color: #eff2f3;
+  padding: 12px;
+  background-color: #b4c8cf;
+  border: 1px solid #b4c8cf;
+}
+
+.cards .card button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-weight: bold;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.cards .card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .portion, aside, section {
   margin: 0 auto;
+  text-align: justify;
 }
 
 .portion h3, aside h3, section h3 {
+  font-family: "Indie Flower", cursive;
+  font-size: 2em;
+  color: #1f1e1e;
+  letter-spacing: .1em;
+  font-weight: 500;
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding: 5px 10px;
 }
 
 .portion p, aside p, section p {
@@ -82,12 +176,40 @@ nav {
           align-items: center;
 }
 
-.portion img {
-  width: 30vw;
+.portion h3 {
+  border-bottom: 2px dashed #604770;
 }
 
-aside, section {
-  margin: 40px;
+.portion figure {
+  margin: 20px 40px 0 0;
+}
+
+.portion img {
+  -webkit-filter: sepia(40%);
+          filter: sepia(40%);
+  width: 30vw;
+  opacity: .8;
+}
+
+.portion img:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.portion article h3 {
+  margin-top: 0;
+}
+
+aside h3 {
+  background-color: #a475a8;
+}
+
+section h3 {
+  background-color: #a8759a;
 }
 
 @media screen and (max-width: 800px) {
@@ -99,7 +221,7 @@ aside, section {
   }
   .cards .card {
     width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
   }
   .cards, .portion, aside, section {
     margin: 0 auto;
@@ -110,6 +232,9 @@ aside, section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .portion figure {
+    margin: 20px;
   }
   .portion figure img {
     width: 50vw;
