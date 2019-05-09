@@ -84,6 +84,7 @@ a {
 
 /* Images of Websites */
 
+#w7-sass-color {background-image: url(img/overviewPreview/w7-sass-colormixin.png);}
 #w7-sass {background-image: url(img/overviewPreview/7-sass.jpg);}
 #w7-w3css {background-image: url(img/overviewPreview/7-w3-framework.jpg);
     background-size: 150%;

@@ -251,5 +251,9 @@ h3 {
     .banner-left, .banner-right {
         display: none;
     }
+    .nav {
+        text-align: center;
+        flex-direction: column;
+    }
 }
 
