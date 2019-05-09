@@ -1,0 +1,21 @@
+header {
+    margin-top: 0;
+    height: $banner-height;
+    background-color: $banner-color;
+    color: $light-font-color;
+    text-align: center;
+    h1 {
+        margin-top: inherit;
+        font-family: $special-font-fam;
+        font-size: $big-font;
+        font-weight: 100;
+        letter-spacing: .2em;
+        line-height: $banner-height + 40px;
+        i {
+            font-weight: 100;
+            font-size: $big-font*0.8;
+            position: relative;
+            top: 10px;
+        }
+    }
+}

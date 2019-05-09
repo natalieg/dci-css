@@ -1,15 +1,3 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.container {
-  padding: 20px 40px;
-}
-
 header {
   margin-top: 0;
   height: 120px;
@@ -32,6 +20,20 @@ header h1 i {
   font-size: 2em;
   position: relative;
   top: 10px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  padding: 20px 40px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 nav, footer {
@@ -102,11 +104,11 @@ footer a:hover {
 }
 
 .cards .card:nth-child(2) {
-  background-color: #6d4770;
+  background-color: #704765;
 }
 
 .cards .card:nth-child(3) {
-  background-color: #704765;
+  background-color: #70474a;
 }
 
 .cards .card {
@@ -151,7 +153,6 @@ footer a:hover {
 
 .portion, aside, section {
   margin: 0 auto;
-  text-align: justify;
 }
 
 .portion h3, aside h3, section h3 {
@@ -165,6 +166,7 @@ footer a:hover {
 }
 
 .portion p, aside p, section p {
+  text-align: justify;
   padding: 0;
   margin: 0;
 }
@@ -207,11 +209,11 @@ footer a:hover {
 }
 
 aside h3 {
-  background-color: #a475a8;
+  background-color: #cfb4c8;
 }
 
 section h3 {
-  background-color: #a8759a;
+  background-color: #cfb4b6;
 }
 
 @media screen and (max-width: 800px) {
