@@ -1,0 +1,259 @@
+@import "navFooter";
+
+$main-font: -apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+Roboto,
+Oxygen,
+Ubuntu,
+Cantarell,
+'Open Sans',
+'Helvetica Neue',
+sans-serif;
+$navFoo-background: #6c915b;
+$navFoo-text: white;
+$secondary-font: "Quicksand";
+$plant-color: $navFoo-background;
+
+@font-face {
+    src: url(font/Quicksand-Light.ttf);
+    font-family: "Quicksand";
+}
+
+@mixin link-style {
+    &:hover {
+        background-color: invert($color: $navFoo-background);
+        color: invert($color: $navFoo-text);
+        border: 1px solid $navFoo-background;
+        padding: 11px;
+    }
+    &:active {
+        font-weight: bold;
+        padding: 16px 9px;
+        border: 2px solid $navFoo-background;
+    }
+}
+
+* {
+    font-family: $main-font;
+}
+
+body {
+    margin: 0;
+
+    .main {
+        padding: 20px 50px;
+    }
+}
+
+@mixin leafposition($posX, $posY, $rotation) {
+    transform: translate($posX, $posY) rotate($rotation);
+}
+
+@keyframes plantGrow {
+    0% {transform: scale(0.1); bottom: -10px};
+    30% {transform: scale(1)}
+}
+
+@mixin animationGrow {
+    animation: plantGrow 3s;
+}
+
+@keyframes particleAnimation {
+    0% {transform: translate(random(10) + px, 0px); opacity: 1};
+    30% {transform: translate(random(16) + px, -10px) scale(0.2); opacity: 1};
+    60% {transform: translate(random(10) + px, -20px); opacity: 1};
+    80% {transform: translate(random(6) + px, -40px) scale(0.2); opacity: 5};
+    100% {transform: translate(random(4) + px, -60px); opacity: 0};
+}
+
+@mixin particleAnimationMix($leftPos, $duration, $delay){
+    left: $leftPos;
+    animation: particleAnimation $duration linear $delay infinite;
+}
+
+.plant {
+    padding: 80px;
+    height: 100px;
+    width: 100px;
+    // border: 1px solid black;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 3;
+    transform: scale(1.2);
+    .leaf {
+        z-index: 2;
+        overflow: hidden;
+        position: absolute;
+        bottom: 20px;
+        width: 100px;
+        height: 70px;
+        -webkit-clip-path: polygon(31% 55%, 55% 0, 76% 57%, 53% 100%);
+        clip-path: polygon(31% 55%, 55% 0, 76% 57%, 53% 100%);
+        background-color: $plant-color;
+        @include animationGrow;
+    }
+    .leaf1 {
+        @include leafposition(26px, 10px, 50deg);
+        background-color: darken($color: $plant-color, $amount: 5);
+    }
+    .leaf2 {
+        background-color: lighten($color: $plant-color, $amount: 5);
+        @include leafposition(-10px, 0, -15deg);
+    }
+    .leaf3 {
+        @include leafposition(-22px, 10px, -40deg);
+    }
+    .particles {
+        .part {
+            opacity: 0;
+            position: absolute;
+            bottom: 50px;
+            left: 120px;
+            height: 10px;
+            width: 10px;
+            background-color: white;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 1px 1px 5px rgb(255, 255, 255);
+        }
+        .part1 {
+            // animation: particleAnimation 5s linear infinite;
+            @include particleAnimationMix(130px, 1s, 0);
+        }
+        .part2 {
+            // left: 140px;
+            // animation: particleAnimation 5s linear 2s infinite;
+            @include particleAnimationMix(140px, 5s, 2s);
+        }
+        .part3 {
+            // left: 120px;
+            // animation: particleAnimation 5s linear 4s infinite;
+            @include particleAnimationMix(120px, 5s, 4s);
+        }
+        .part4 {
+            @include particleAnimationMix(125px, 2s, 1s);
+        }
+        .part5 {
+            @include particleAnimationMix(135px, 3s, 6s);
+        }
+        .part6 {
+            @include particleAnimationMix(120px, 4s, 2s);
+        }
+    }
+}
+
+
+
+
+header {
+    position: relative;
+    z-index: 2;
+    // height: 100px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(132, 135, 136);
+    background-image: url(img/landscape3.jpeg);
+    // background-blend-mode: darken;
+    background-position: top center;
+    background-size: cover;
+
+    h1,
+    h2 {
+        font-weight: bold;
+        color: $navFoo-text;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 2.2em;
+        letter-spacing: 0.1em;
+    }
+
+    h2 {
+        font-family: $secondary-font;
+    }
+}
+
+nav,
+footer {
+    background-color: $navFoo-background;
+    z-index: 6;
+    a {
+        color: $navFoo-text;
+        @include link-style();
+    }
+}
+
+.section-text {
+    h3 {
+        font-size: 1.5em;
+        padding-bottom: 0;
+        margin-bottom: -10px;
+        text-align: center;
+        color: $navFoo-background;
+    }
+
+    p {
+        text-align: justify;
+        font-family: $secondary-font;
+        font-size: 1.2em;
+    }
+}
+
+.section-image {
+    display: flex;
+    justify-content: space-around;
+
+    div {
+        height: 30vw;
+        width: 100%;
+    }
+}
+
+.backgroundImg {
+    background-size: cover;
+    background-position: center center;
+}
+
+#img1 {
+    @extend .backgroundImg;
+    background-image: url(img/landscape.jpeg);
+}
+
+#img2 {
+    @extend .backgroundImg;
+    background-image: url(img/nature.jpeg);
+}
+
+#img3 {
+    @extend .backgroundImg;
+    background-image: url(img/nature2.jpeg);
+}
+
+@media screen and (max-width: 500px) {
+    .section-image {
+        flex-direction: column;
+
+        div {
+            height: 30vh;
+            margin: 10px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .plant {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .section-image {
+        div:hover {
+            width: 300%;
+            transition: 0.7s;
+        }
+    }
+}
