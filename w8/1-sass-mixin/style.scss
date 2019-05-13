@@ -99,11 +99,21 @@ body {
         background-color: darken($color: $plant-color, $amount: 5);
     }
     .leaf2 {
-        background-color: lighten($color: $plant-color, $amount: 5);
-        @include leafposition(-10px, 0, -15deg);
+        z-index: 1;
+        background-color: darken($color: $plant-color, $amount: 10);
+        @include leafposition(-5px, 0, -15deg);
     }
     .leaf3 {
         @include leafposition(-22px, 10px, -40deg);
+    }
+    .leaf4 {
+        background-color: lighten($color: $plant-color, $amount: 10);
+        @include leafposition(-12px, 8px, -25deg);
+    }
+    .leaf5 {
+        z-index: 1;
+        background-color: darken($color: $plant-color, $amount: 15);
+        @include leafposition(22px, 5px, 35deg);
     }
     .particles {
         .part {

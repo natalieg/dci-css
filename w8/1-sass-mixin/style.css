@@ -78,8 +78,8 @@ body .main {
 
 @-webkit-keyframes particleAnimation {
   0% {
-    -webkit-transform: translate(4px, 0px);
-            transform: translate(4px, 0px);
+    -webkit-transform: translate(5px, 0px);
+            transform: translate(5px, 0px);
     opacity: 1;
   }
   30% {
@@ -88,8 +88,8 @@ body .main {
     opacity: 1;
   }
   60% {
-    -webkit-transform: translate(3px, -20px);
-            transform: translate(3px, -20px);
+    -webkit-transform: translate(6px, -20px);
+            transform: translate(6px, -20px);
     opacity: 1;
   }
   80% {
@@ -98,16 +98,16 @@ body .main {
     opacity: 5;
   }
   100% {
-    -webkit-transform: translate(1px, -60px);
-            transform: translate(1px, -60px);
+    -webkit-transform: translate(4px, -60px);
+            transform: translate(4px, -60px);
     opacity: 0;
   }
 }
 
 @keyframes particleAnimation {
   0% {
-    -webkit-transform: translate(4px, 0px);
-            transform: translate(4px, 0px);
+    -webkit-transform: translate(5px, 0px);
+            transform: translate(5px, 0px);
     opacity: 1;
   }
   30% {
@@ -116,8 +116,8 @@ body .main {
     opacity: 1;
   }
   60% {
-    -webkit-transform: translate(3px, -20px);
-            transform: translate(3px, -20px);
+    -webkit-transform: translate(6px, -20px);
+            transform: translate(6px, -20px);
     opacity: 1;
   }
   80% {
@@ -126,8 +126,8 @@ body .main {
     opacity: 5;
   }
   100% {
-    -webkit-transform: translate(1px, -60px);
-            transform: translate(1px, -60px);
+    -webkit-transform: translate(4px, -60px);
+            transform: translate(4px, -60px);
     opacity: 0;
   }
 }
@@ -165,14 +165,28 @@ body .main {
 }
 
 .plant .leaf2 {
-  background-color: #789f66;
-  -webkit-transform: translate(-10px, 0) rotate(-15deg);
-          transform: translate(-10px, 0) rotate(-15deg);
+  z-index: 1;
+  background-color: #557247;
+  -webkit-transform: translate(-5px, 0) rotate(-15deg);
+          transform: translate(-5px, 0) rotate(-15deg);
 }
 
 .plant .leaf3 {
   -webkit-transform: translate(-22px, 10px) rotate(-40deg);
           transform: translate(-22px, 10px) rotate(-40deg);
+}
+
+.plant .leaf4 {
+  background-color: #86a976;
+  -webkit-transform: translate(-12px, 8px) rotate(-25deg);
+          transform: translate(-12px, 8px) rotate(-25deg);
+}
+
+.plant .leaf5 {
+  z-index: 1;
+  background-color: #49623e;
+  -webkit-transform: translate(22px, 5px) rotate(35deg);
+          transform: translate(22px, 5px) rotate(35deg);
 }
 
 .plant .particles .part {
