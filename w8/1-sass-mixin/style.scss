@@ -43,6 +43,7 @@ body {
 
     .main {
         padding: 20px 50px;
+        max-width: 900px;
     }
 }
 
@@ -73,7 +74,7 @@ body {
 }
 
 .plant {
-    padding: 40px;
+    padding: 92px;
     height: 100px;
     width: 100px;
     // border: 1px solid black;
@@ -87,10 +88,12 @@ body {
         overflow: hidden;
         position: absolute;
         bottom: 20px;
-        width: 100px;
+        width: 70px;
         height: 70px;
-        -webkit-clip-path: polygon(31% 55%, 55% 0, 76% 57%, 53% 100%);
-        clip-path: polygon(31% 55%, 55% 0, 76% 57%, 53% 100%);
+        // -webkit-clip-path: polygon(31% 55%, 55% 0, 76% 57%, 53% 100%);
+        // clip-path: polygon(31% 55%, 55% 0, 76% 57%, 53% 100%);
+        -webkit-clip-path: polygon(50% 0%, 73% 29%, 79% 75%, 50% 100%, 23% 73%, 31% 26%);
+        clip-path: polygon(50% 0%, 73% 29%, 79% 75%, 50% 100%, 23% 73%, 31% 26%);
         background-color: $plant-color;
         @include animationGrow;
     }
@@ -253,7 +256,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     .plant {
         display: none;
     }

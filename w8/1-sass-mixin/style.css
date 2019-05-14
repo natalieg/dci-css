@@ -50,6 +50,7 @@ body {
 
 body .main {
   padding: 20px 50px;
+  max-width: 900px;
 }
 
 @-webkit-keyframes plantGrow {
@@ -78,18 +79,18 @@ body .main {
 
 @-webkit-keyframes particleAnimation {
   0% {
-    -webkit-transform: translate(1px, 0px);
-            transform: translate(1px, 0px);
+    -webkit-transform: translate(10px, 0px);
+            transform: translate(10px, 0px);
     opacity: 1;
   }
   30% {
-    -webkit-transform: translate(1px, -10px) scale(0.2);
-            transform: translate(1px, -10px) scale(0.2);
+    -webkit-transform: translate(6px, -10px) scale(0.2);
+            transform: translate(6px, -10px) scale(0.2);
     opacity: 1;
   }
   60% {
-    -webkit-transform: translate(8px, -20px);
-            transform: translate(8px, -20px);
+    -webkit-transform: translate(2px, -20px);
+            transform: translate(2px, -20px);
     opacity: 1;
   }
   80% {
@@ -98,26 +99,26 @@ body .main {
     opacity: 5;
   }
   100% {
-    -webkit-transform: translate(3px, -60px);
-            transform: translate(3px, -60px);
+    -webkit-transform: translate(2px, -60px);
+            transform: translate(2px, -60px);
     opacity: 0;
   }
 }
 
 @keyframes particleAnimation {
   0% {
-    -webkit-transform: translate(1px, 0px);
-            transform: translate(1px, 0px);
+    -webkit-transform: translate(10px, 0px);
+            transform: translate(10px, 0px);
     opacity: 1;
   }
   30% {
-    -webkit-transform: translate(1px, -10px) scale(0.2);
-            transform: translate(1px, -10px) scale(0.2);
+    -webkit-transform: translate(6px, -10px) scale(0.2);
+            transform: translate(6px, -10px) scale(0.2);
     opacity: 1;
   }
   60% {
-    -webkit-transform: translate(8px, -20px);
-            transform: translate(8px, -20px);
+    -webkit-transform: translate(2px, -20px);
+            transform: translate(2px, -20px);
     opacity: 1;
   }
   80% {
@@ -126,14 +127,14 @@ body .main {
     opacity: 5;
   }
   100% {
-    -webkit-transform: translate(3px, -60px);
-            transform: translate(3px, -60px);
+    -webkit-transform: translate(2px, -60px);
+            transform: translate(2px, -60px);
     opacity: 0;
   }
 }
 
 .plant {
-  padding: 80px;
+  padding: 92px;
   height: 100px;
   width: 100px;
   position: absolute;
@@ -149,10 +150,10 @@ body .main {
   overflow: hidden;
   position: absolute;
   bottom: 20px;
-  width: 100px;
+  width: 70px;
   height: 70px;
-  -webkit-clip-path: polygon(31% 55%, 55% 0, 76% 57%, 53% 100%);
-  clip-path: polygon(31% 55%, 55% 0, 76% 57%, 53% 100%);
+  -webkit-clip-path: polygon(50% 0%, 73% 29%, 79% 75%, 50% 100%, 23% 73%, 31% 26%);
+  clip-path: polygon(50% 0%, 73% 29%, 79% 75%, 50% 100%, 23% 73%, 31% 26%);
   background-color: #94b386;
   -webkit-animation: plantGrow 3s;
           animation: plantGrow 3s;
@@ -349,7 +350,7 @@ footer a:active {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .plant {
     display: none;
   }
