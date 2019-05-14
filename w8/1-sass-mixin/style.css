@@ -78,56 +78,56 @@ body .main {
 
 @-webkit-keyframes particleAnimation {
   0% {
-    -webkit-transform: translate(5px, 0px);
-            transform: translate(5px, 0px);
+    -webkit-transform: translate(1px, 0px);
+            transform: translate(1px, 0px);
     opacity: 1;
   }
   30% {
-    -webkit-transform: translate(9px, -10px) scale(0.2);
-            transform: translate(9px, -10px) scale(0.2);
+    -webkit-transform: translate(1px, -10px) scale(0.2);
+            transform: translate(1px, -10px) scale(0.2);
     opacity: 1;
   }
   60% {
-    -webkit-transform: translate(6px, -20px);
-            transform: translate(6px, -20px);
+    -webkit-transform: translate(8px, -20px);
+            transform: translate(8px, -20px);
     opacity: 1;
   }
   80% {
-    -webkit-transform: translate(6px, -40px) scale(0.2);
-            transform: translate(6px, -40px) scale(0.2);
+    -webkit-transform: translate(4px, -40px) scale(0.2);
+            transform: translate(4px, -40px) scale(0.2);
     opacity: 5;
   }
   100% {
-    -webkit-transform: translate(4px, -60px);
-            transform: translate(4px, -60px);
+    -webkit-transform: translate(3px, -60px);
+            transform: translate(3px, -60px);
     opacity: 0;
   }
 }
 
 @keyframes particleAnimation {
   0% {
-    -webkit-transform: translate(5px, 0px);
-            transform: translate(5px, 0px);
+    -webkit-transform: translate(1px, 0px);
+            transform: translate(1px, 0px);
     opacity: 1;
   }
   30% {
-    -webkit-transform: translate(9px, -10px) scale(0.2);
-            transform: translate(9px, -10px) scale(0.2);
+    -webkit-transform: translate(1px, -10px) scale(0.2);
+            transform: translate(1px, -10px) scale(0.2);
     opacity: 1;
   }
   60% {
-    -webkit-transform: translate(6px, -20px);
-            transform: translate(6px, -20px);
+    -webkit-transform: translate(8px, -20px);
+            transform: translate(8px, -20px);
     opacity: 1;
   }
   80% {
-    -webkit-transform: translate(6px, -40px) scale(0.2);
-            transform: translate(6px, -40px) scale(0.2);
+    -webkit-transform: translate(4px, -40px) scale(0.2);
+            transform: translate(4px, -40px) scale(0.2);
     opacity: 5;
   }
   100% {
-    -webkit-transform: translate(4px, -60px);
-            transform: translate(4px, -60px);
+    -webkit-transform: translate(3px, -60px);
+            transform: translate(3px, -60px);
     opacity: 0;
   }
 }
@@ -153,7 +153,7 @@ body .main {
   height: 70px;
   -webkit-clip-path: polygon(31% 55%, 55% 0, 76% 57%, 53% 100%);
   clip-path: polygon(31% 55%, 55% 0, 76% 57%, 53% 100%);
-  background-color: #6c915b;
+  background-color: #94b386;
   -webkit-animation: plantGrow 3s;
           animation: plantGrow 3s;
 }
@@ -161,12 +161,12 @@ body .main {
 .plant .leaf1 {
   -webkit-transform: translate(26px, 10px) rotate(50deg);
           transform: translate(26px, 10px) rotate(50deg);
-  background-color: #608151;
+  background-color: #86a976;
 }
 
 .plant .leaf2 {
   z-index: 1;
-  background-color: #557247;
+  background-color: #789f66;
   -webkit-transform: translate(-5px, 0) rotate(-15deg);
           transform: translate(-5px, 0) rotate(-15deg);
 }
@@ -177,14 +177,14 @@ body .main {
 }
 
 .plant .leaf4 {
-  background-color: #86a976;
+  background-color: #b0c7a5;
   -webkit-transform: translate(-12px, 8px) rotate(-25deg);
           transform: translate(-12px, 8px) rotate(-25deg);
 }
 
 .plant .leaf5 {
   z-index: 1;
-  background-color: #49623e;
+  background-color: #6c915b;
   -webkit-transform: translate(22px, 5px) rotate(35deg);
           transform: translate(22px, 5px) rotate(35deg);
 }

@@ -13,7 +13,7 @@ sans-serif;
 $navFoo-background: #6c915b;
 $navFoo-text: white;
 $secondary-font: "Quicksand";
-$plant-color: $navFoo-background;
+$plant-color: lighten($navFoo-background, 15);
 
 @font-face {
     src: url(font/Quicksand-Light.ttf);
@@ -73,7 +73,7 @@ body {
 }
 
 .plant {
-    padding: 80px;
+    padding: 40px;
     height: 100px;
     width: 100px;
     // border: 1px solid black;
