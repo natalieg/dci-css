@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  border-bottom: 1px solid #08310b;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, white), to(#519c3e));
+  background-image: linear-gradient(to bottom, white 70%, #519c3e);
+}
+
+.ball1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #c57979;
+  border: 5px dashed #b65555;
+  position: absolute;
+  bottom: 0;
+  background-image: url(texture2.jpeg);
+  background-blend-mode: overlay;
+  -webkit-animation: rollBall 8s linear 0s infinite;
+          animation: rollBall 8s linear 0s infinite;
+}
+
+.ball2 {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #47898b;
+  border: 5px dashed #366869;
+  position: absolute;
+  bottom: 0;
+  background-image: url(texture2.jpeg);
+  background-blend-mode: overlay;
+  left: 100px;
+  -webkit-animation: rollBall 6s linear 2s infinite;
+          animation: rollBall 6s linear 2s infinite;
+}
+
+.ball3 {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #573c7a;
+  border: 5px dashed #3f2b58;
+  position: absolute;
+  bottom: 0;
+  background-image: url(texture2.jpeg);
+  background-blend-mode: overlay;
+  left: 240px;
+  -webkit-animation: rollBall 12s linear 4s infinite;
+          animation: rollBall 12s linear 4s infinite;
+}
+
+@-webkit-keyframes rollBall {
+  0% {
+    -webkit-transform: translate(0vw) rotate(0deg);
+            transform: translate(0vw) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(70vw) rotate(360deg);
+            transform: translate(70vw) rotate(360deg);
+  }
+}
+
+@keyframes rollBall {
+  0% {
+    -webkit-transform: translate(0vw) rotate(0deg);
+            transform: translate(0vw) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(70vw) rotate(360deg);
+            transform: translate(70vw) rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

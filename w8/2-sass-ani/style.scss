@@ -1,0 +1,48 @@
+$ball1size: 100px;
+$ball2size: 140px;
+$ball3size: 160px;
+
+@mixin ballStyle($size, $color){
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    background-color: $color;
+    border: 5px dashed darken($color, 10%);
+    position: absolute;
+    bottom: 0;
+    background-image: url(texture2.jpeg);
+    background-blend-mode: overlay;
+}
+
+.container {
+    position: relative;
+    border-bottom: 1px solid rgb(8, 49, 11);
+    height: 400px;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 70%, rgb(81, 156, 62));
+}
+
+@mixin ballAnimationMix($pace, $delay){
+    animation: rollBall $pace linear $delay infinite;
+}
+
+.ball1 {
+    @include ballStyle($ball1size, rgb(197, 121, 121));
+    @include ballAnimationMix(8s,0s);
+}
+.ball2 {
+    @include ballStyle($ball2size, rgb(71, 137, 139));
+    left: $ball1size;
+    @include ballAnimationMix(6s,2s);
+}
+.ball3 {
+    @include ballStyle($ball3size, rgb(87, 60, 122));
+    left: $ball2size + $ball1size;
+    @include ballAnimationMix(12s,4s);
+}
+
+
+@keyframes rollBall{
+    0% {transform: translate(0vw) rotate(0deg)}
+    50% {transform: translate(70vw) rotate(360deg)}
+}
+
