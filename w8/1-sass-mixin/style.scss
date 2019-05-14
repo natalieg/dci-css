@@ -82,7 +82,7 @@ body {
     position: absolute;
     bottom: -5px;
     left: 0;
-    z-index: 3;
+    z-index: 14;
     transform: scale(1.2);
     .leaf {
         z-index: 2;
@@ -193,7 +193,8 @@ header {
 nav,
 footer {
     background-color: $navFoo-background;
-    z-index: 6;
+    position: relative;
+    z-index: 10;
     a {
         color: $navFoo-text;
         @include link-style();
