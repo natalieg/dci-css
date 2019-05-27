@@ -89,6 +89,10 @@ a {
 
 /* Images of Websites */
 
+#w9-bsform {background-image: url(img/overviewPreview/9_4-bootstrap-forms3.jpg);}
+#w9-bscards {background-image: url(img/overviewPreview/9_3-bootstrap-cards-index2.jpg);}
+#w9-turnCcards {background-image: url(img/overviewPreview/9_1-turnCards.jpg);}
+#w8-sass-mixin {background-image: url(img/overviewPreview/8_2-sass-mixin.jpg);}
 #w8-sass-ani {background-image: url(img/overviewPreview/w8-sass-animation.png);}
 #w7-sass-color {background-image: url(img/overviewPreview/w7-sass-colormixin.png);}
 #w7-sass {background-image: url(img/overviewPreview/7-sass.jpg);}
