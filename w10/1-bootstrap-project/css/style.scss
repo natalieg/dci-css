@@ -1,3 +1,5 @@
+@import "history";
+
 $nav-bg: #FFD038;
 $nav-col: black;
 $font1: -apple-system,
@@ -10,6 +12,7 @@ Cantarell,
 'Open Sans',
 'Helvetica Neue',
 sans-serif;
+
 
 .germany-banner {
     background-color: rgb(174, 180, 182);
@@ -152,6 +155,11 @@ sans-serif;
     p {
         font-size: 1em;
     }
+}
+
+.smallInfo {
+    text-align: center;
+    margin: 10px;
 }
 
 @media screen and (max-width: 768px){
