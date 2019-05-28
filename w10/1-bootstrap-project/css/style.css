@@ -4,7 +4,9 @@
   background-size: cover;
   background-position: center center;
   background-blend-mode: overlay;
-  height: 90vh;
+  height: 80vh;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .germany-banner h1 {
@@ -144,6 +146,8 @@
 
 .card {
   text-align: center;
+  min-width: 200px;
+  margin-bottom: 10px !important;
 }
 
 .card .personImg {
@@ -169,5 +173,11 @@
 
 .toTop p {
   font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .hide-small {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
