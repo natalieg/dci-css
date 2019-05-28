@@ -1,30 +1,145 @@
-$nav-bg: rgb(120, 154, 172);
+$nav-bg: #FFD038;
 $nav-col: black;
-$font1: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$font1: -apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+Roboto,
+Oxygen,
+Ubuntu,
+Cantarell,
+'Open Sans',
+'Helvetica Neue',
+sans-serif;
 
 .germany-banner {
-    background-color: rgb(204, 209, 218);
+    background-color: rgb(174, 180, 182);
     background-image: url(img/germany1.jpg);
     background-size: cover;
     background-position: center center;
     background-blend-mode: overlay;
+    height: 90vh;
+
+    h1 {
+        padding-top: 10vh;
+        animation: introAni 3s 1;
+    }
+
+    p {
+        animation: introAni2 6s 1;
+    }
+
     img {
         width: 100px;
+        animation: introAniImg 5s 1;
+    }
+}
+
+@keyframes introAni {
+    0% {
+        transform: translate(-10vw, 0)
+    }
+}
+
+@keyframes introAni2 {
+    0% {
+        transform: translate(-100vw, 0)
+    }
+
+    80% {
+        transform: translate(-100vw, 0)
+    }
+}
+
+@keyframes introAniImg {
+    0% {
+        transform: scaleY(0)
+    }
+
+    50% {
+        transform: scaleY(0)
     }
 }
 
 .navbar {
     background-color: $nav-bg;
     font-family: $font1;
+
     a {
         color: $nav-col;
     }
 }
 
+.content {
+    max-width: 1200px;
+
+    &>p {
+        text-align: justify;
+    }
+}
+
+.textDiv {
+    &>p {
+        text-align: justify;
+    }
+}
+
+.imgSide {
+    width: 100%;
+}
+
+.carousel {
+
+    h3,
+    p {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        background-color: black;
+    }
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+    .imgWrap {
+        background-color: green;
+        width: 90vw;
+        height: 50vw;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #carImg1 {
+        background-image: url(img/fun/beer.jpeg)
+    }
+
+    #carImg2 {
+        background-image: url(img/fun/bread.jpeg)
+    }
+
+    #carImg3 {
+        background-image: url(img/fun/car.jpeg)
+    }
+}
+
 .card {
     text-align: center;
+
     .personImg {
         width: 90%;
         margin: 0 auto 10px;
+    }
+}
+
+.toTop {
+    text-align: center;
+    a {
+        color: black;
+    }
+    i {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1em;
     }
 }
