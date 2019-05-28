@@ -78,13 +78,17 @@ sans-serif;
 }
 
 .textDiv {
-    &>p {
+    p {
         text-align: justify;
     }
 }
 
 .imgSide {
     width: 100%;
+}
+
+.imgCenter {
+    width: 50%;
 }
 
 .carousel {
@@ -128,6 +132,10 @@ sans-serif;
         width: 90%;
         margin: 0 auto 10px;
     }
+}
+
+.additionalInfoBlock {
+    margin-top: 100px;
 }
 
 .toTop {

@@ -89,6 +89,8 @@ a {
 
 /* Images of Websites */
 
+#w10-germany {background-image: url(img/overviewPreview/w10-project-germany.png);
+    background-position: top left;}
 #w9-bsform {background-image: url(img/overviewPreview/9_4-bootstrap-forms3.jpg);}
 #w9-bscards {background-image: url(img/overviewPreview/9_3-bootstrap-cards-index2.jpg);}
 #w9-turnCcards {background-image: url(img/overviewPreview/9_1-turnCards.jpg);}

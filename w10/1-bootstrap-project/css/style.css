@@ -99,12 +99,16 @@
   text-align: justify;
 }
 
-.textDiv > p {
+.textDiv p {
   text-align: justify;
 }
 
 .imgSide {
   width: 100%;
+}
+
+.imgCenter {
+  width: 50%;
 }
 
 .carousel h3,
@@ -145,6 +149,10 @@
 .card .personImg {
   width: 90%;
   margin: 0 auto 10px;
+}
+
+.additionalInfoBlock {
+  margin-top: 100px;
 }
 
 .toTop {
