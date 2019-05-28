@@ -12,8 +12,8 @@ body {
 }
 
 .box {
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
     background-color: red;
     margin: 20px;
@@ -35,6 +35,9 @@ body {
     img {
         width: 33%;
         margin: 0 33%;
+    }
+    p {
+        text-align: justify;
     }
 }
 
@@ -60,7 +63,10 @@ body {
 }
 
 .text-right {
-    left: 10vw;
+    left: 12vw;
+}
+.text-left {
+    left: 0;
 }
 
 
@@ -80,7 +86,7 @@ connection {
 
 @media screen and (max-width: 991px){
     .text-right {
-        top: -1vw;
+        top: 15%;
         left: 20px;
         text-align: center !important;
     }
