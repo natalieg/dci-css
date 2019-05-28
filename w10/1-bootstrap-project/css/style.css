@@ -179,5 +179,12 @@
   .hide-small {
     display: none;
   }
+  .germany-banner h1 {
+    padding-left: 5vw;
+    font-size: 10vw;
+  }
+  .germany-banner img {
+    width: 10vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
