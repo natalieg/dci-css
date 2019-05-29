@@ -18,6 +18,7 @@ window.onresize = function () {
 
 
 function scrollBackgroundNav() {
+    viewportWidth = document.documentElement.clientWidth;
     if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 50) {
         document.getElementById("mainNav").style.backgroundColor = "#FFD038";
     } else {
