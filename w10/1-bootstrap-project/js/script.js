@@ -1,23 +1,21 @@
 
-var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+var viewportWidth = document.documentElement.clientWidth;
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
-window.onscroll = function () { 
+window.onscroll = function () {
     scrollBackgroundNav();
-     if (viewportWidth > 640) {
-         document.getElementById("header").style.height = "80vh";
-     } else {
-         document.getElementById("header").style.height = "40vh";
-     }
 };
 
-function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header").style.height = "45vh";
-    } else {
-        document.getElementById("header").style.height = "80vh";
-    }
+window.onload = function(){
+    changeColor();
 }
+
+window.onresize = function () {
+    console.log("im resizing");
+    changeColor();
+};
+
+
 
 function scrollBackgroundNav() {
     if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 50) {
@@ -26,3 +24,12 @@ function scrollBackgroundNav() {
         document.getElementById("mainNav").style.backgroundColor = "rgba(255, 255, 255, 0)";
     }
 }
+
+function changeColor() {
+    viewportWidth = document.documentElement.clientWidth;
+    if (viewportWidth > 768) {
+        document.getElementById("mainNav").style.backgroundColor = "rgba(255, 255, 255, 0)";
+    } else {
+        document.getElementById("mainNav").style.backgroundColor = "#FFD038";
+    }
+};

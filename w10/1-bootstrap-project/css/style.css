@@ -12,6 +12,10 @@ body {
   color: black;
 }
 
+.history-banner h1 {
+  padding-top: 30px;
+}
+
 .history-banner .my-2 {
   border-bottom: 1px solid black;
 }
@@ -133,6 +137,78 @@ connection {
   }
 }
 
+.food-banner {
+  background-color: #cac8b5;
+  background-image: url(img/food/vegetables-1212845.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.food-banner h1 {
+  padding-top: 30px;
+}
+
+.food-banner .my-2 {
+  border-bottom: 1px solid black;
+}
+
+.foodInteractive {
+  background-color: #f0f0c5;
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.foodInteractive .circle {
+  height: 200px;
+  width: 200px;
+  background-color: #85bfe0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+  position: absolute;
+}
+
+.foodInteractive #basket {
+  width: 80%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  z-index: 10;
+}
+
+.foodInteractive #basket:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  cursor: pointer;
+}
+
+.fruit {
+  position: absolute;
+  width: 100px;
+  z-index: 4;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .germany-banner {
   background-color: #aeb4b6;
   background-image: url(img/germany1.jpg);
@@ -161,6 +237,13 @@ connection {
           animation: introAniImg 3s 1;
 }
 
+.germany-banner img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 @-webkit-keyframes introAni {
   0% {
     -webkit-transform: translate(-10vw, 0);
@@ -177,23 +260,23 @@ connection {
 
 @-webkit-keyframes introAni2 {
   0% {
-    -webkit-transform: translate(-20vw, 0);
-            transform: translate(-20vw, 0);
+    -webkit-transform: translate(-90vw, 0);
+            transform: translate(-90vw, 0);
   }
   80% {
-    -webkit-transform: translate(-100vw, 0);
-            transform: translate(-100vw, 0);
+    -webkit-transform: translate(-90vw, 0);
+            transform: translate(-90vw, 0);
   }
 }
 
 @keyframes introAni2 {
   0% {
-    -webkit-transform: translate(-20vw, 0);
-            transform: translate(-20vw, 0);
+    -webkit-transform: translate(-90vw, 0);
+            transform: translate(-90vw, 0);
   }
   80% {
-    -webkit-transform: translate(-100vw, 0);
-            transform: translate(-100vw, 0);
+    -webkit-transform: translate(-90vw, 0);
+            transform: translate(-90vw, 0);
   }
 }
 
