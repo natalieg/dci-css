@@ -4,13 +4,11 @@ var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () { 
     scrollBackgroundNav();
-    // if (viewportWidth > 640) {
-    //     document.getElementById("header").style.height = "80vh";
-    //     scrollFunction(); 
-    // } else {
-    //     document.getElementById("header").style.height = "40vh";
-    //     console.log('Small viewport');
-    // }
+     if (viewportWidth > 640) {
+         document.getElementById("header").style.height = "80vh";
+     } else {
+         document.getElementById("header").style.height = "40vh";
+     }
 };
 
 function scrollFunction() {
