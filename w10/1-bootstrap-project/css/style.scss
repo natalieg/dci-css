@@ -29,12 +29,12 @@ sans-serif;
     }
 
     p {
-        animation: introAni2 6s 1;
+        animation: introAni2 4s 1;
     }
 
     img {
         width: 100px;
-        animation: introAniImg 5s 1;
+        animation: introAniImg 3s 1;
     }
 }
 
@@ -46,7 +46,7 @@ sans-serif;
 
 @keyframes introAni2 {
     0% {
-        transform: translate(-100vw, 0)
+        transform: translate(-20vw, 0)
     }
 
     80% {
@@ -64,13 +64,23 @@ sans-serif;
     }
 }
 
-.navbar {
-    background-color: $nav-bg;
-    font-family: $font1;
+.myNav {
+    position: -webkit-sticky;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
 
+.navbar {
+    font-family: $font1;
     a {
         color: $nav-col;
     }
+}
+
+.footer {
+    background-color: $nav-bg;
 }
 
 .content {

@@ -5,15 +5,30 @@ body {
   height: 100vh;
 }
 
+.history-banner {
+  background-image: url(img/history/banner2.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: black;
+}
+
+.history-banner .my-2 {
+  border-bottom: 1px solid black;
+}
+
+.history-banner .more {
+  color: #F1CFA1;
+}
+
 .timeline {
   margin-left: 10vw;
 }
 
 .box {
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #ad7e7e;
   margin: 20px;
   background-size: cover;
   background-position: center center;
@@ -23,23 +38,36 @@ body {
   z-index: 2;
 }
 
+.box:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .hisText {
   background-color: rgba(255, 255, 255, 0.973);
   position: relative;
   z-index: 3;
   border: 1px solid grey;
-  -webkit-box-shadow: 0 0 1em black;
-          box-shadow: 0 0 1em black;
+  -webkit-box-shadow: 0 0 0.5em black;
+          box-shadow: 0 0 0.5em black;
   padding: 15px 20px;
   margin: 20px;
+  text-align: center;
+}
+
+.hisText .year {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
 }
 
 .hisText img {
   width: 33%;
-  margin: 0 33%;
+  max-width: 50px;
 }
 
-.hisText p {
+.hisText article {
   text-align: justify;
 }
 
@@ -71,20 +99,8 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-.text-right {
-  left: 12vw;
-}
-
-.text-left {
-  left: 0;
-}
-
 #img1 {
   background-image: url(img/history/otto-the-great.jpg);
-}
-
-.timeline .hisText:nth-child(odd) {
-  text-align: right;
 }
 
 connection {
@@ -96,13 +112,9 @@ connection {
 
 @media screen and (max-width: 991px) {
   .text-right {
-    top: 15%;
-    left: 20px;
     text-align: center !important;
   }
   .text-left {
-    top: 0vw;
-    left: 90px;
     text-align: center !important;
   }
 }
@@ -118,16 +130,6 @@ connection {
   }
   .hisImg .box {
     margin: 10px auto;
-  }
-  .text-right {
-    top: 50px;
-    left: 35vw;
-    padding-left: 20% !important;
-  }
-  .text-left {
-    top: 50px;
-    left: 0;
-    padding-right: 20% !important;
   }
 }
 
@@ -149,14 +151,14 @@ connection {
 }
 
 .germany-banner p {
-  -webkit-animation: introAni2 6s 1;
-          animation: introAni2 6s 1;
+  -webkit-animation: introAni2 4s 1;
+          animation: introAni2 4s 1;
 }
 
 .germany-banner img {
   width: 100px;
-  -webkit-animation: introAniImg 5s 1;
-          animation: introAniImg 5s 1;
+  -webkit-animation: introAniImg 3s 1;
+          animation: introAniImg 3s 1;
 }
 
 @-webkit-keyframes introAni {
@@ -175,8 +177,8 @@ connection {
 
 @-webkit-keyframes introAni2 {
   0% {
-    -webkit-transform: translate(-100vw, 0);
-            transform: translate(-100vw, 0);
+    -webkit-transform: translate(-20vw, 0);
+            transform: translate(-20vw, 0);
   }
   80% {
     -webkit-transform: translate(-100vw, 0);
@@ -186,8 +188,8 @@ connection {
 
 @keyframes introAni2 {
   0% {
-    -webkit-transform: translate(-100vw, 0);
-            transform: translate(-100vw, 0);
+    -webkit-transform: translate(-20vw, 0);
+            transform: translate(-20vw, 0);
   }
   80% {
     -webkit-transform: translate(-100vw, 0);
@@ -217,13 +219,24 @@ connection {
   }
 }
 
+.myNav {
+  position: -webkit-sticky;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
 .navbar {
-  background-color: #FFD038;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .navbar a {
   color: black;
+}
+
+.footer {
+  background-color: #FFD038;
 }
 
 .content {

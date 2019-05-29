@@ -18,7 +18,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md sticky-top navbar-light">
+    <nav id="mainNav" class="myNav navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="#"><i class="fa fa-beer" aria-hidden="true"></i> Germany</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,36 +52,49 @@
     </nav>
 
 
+    <div class="history-banner jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1>German History</h1>
+            <p class="lead">A small Overview</p>
+            <hr class="my-2">
+            <p class="more">many things did happen, there were kings and knights and also merkel</p>
+        </div>
+    </div>
 
     <!-- All content is in here -->
     <div id="mainContent" class="content container-fluid p-5">
 
-        <h2>German History</h2>
-        <p>A small Overview</p>
-
+        <!-- History Timeline, Lines with Jquery -->
         <div class="timeline">
             <div class="row">
-                <div class="col-sm-12 col-md-6 hisText">
-                    <img src="css/img/svg/crowns.svg" alt="">
+                <div class="col-sm-12 col-md-6 hisText" id="text1">
+                    <p class="mb-0"><img class="" src="css/img/svg/crowns.svg" alt=""></p>
+                    <p class="year">962</p>
                     <h3>Otto the Great</h3>
-                    <p> Otto the Great was crowned Holy Roman Emperor. Consequatur illum enim modi
-                        necessitatibus recusandae quo rerum veritatis, aut, inventore dignissimos ducimus odio
-                        cupiditate iste voluptatibus exercitationem eos.</p>
+                    <article>
+                        <p> Otto the Great was crowned Holy Roman Emperor. Consequatur illum enim modi
+                            necessitatibus recusandae quo rerum veritatis, aut, inventore dignissimos ducimus odio
+                            cupiditate iste voluptatibus exercitationem eos.</p>
                         <p>Culpa, facilis quod voluptates praesentium
-                        ratione, dignissimos molestiae harum, dolorem necessitatibus odio atque. erum veritatis, aut, inventore dignissimos ducimus odio
-                        cupiditate iste voluptatibus exercitationem eos.</p>
+                            ratione, dignissimos molestiae harum, dolorem necessitatibus odio atque. erum veritatis,
+                            aut, inventore dignissimos ducimus odio
+                            cupiditate iste voluptatibus exercitationem eos. </p>
+                        <p>He is actually kind of the grandfather of
+                            the owner of the Otto Company. Source: Peter</p>
+                    </article>
                 </div>
                 <div class="col-sm-12 col-md-5 hisImg">
                     <div id="img1" class="1 box odd"></div>
-                    <p class="text-right">962</p>
+
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-5 hisImg">
-                    <p class="text-left">1800</p>
+
                     <div id="img2" class="1 box even"></div>
                 </div>
                 <div class="col-sm-12 col-md-6 hisText">
+                    <p class="text-center year">1800</p>
                     <h3>Text</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur illum enim modi
                         necessitatibus recusandae quo rerum veritatis, aut, inventore dignissimos ducimus odio
@@ -165,6 +178,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="js/connection.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

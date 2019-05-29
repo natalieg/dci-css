@@ -7,21 +7,38 @@ body {
     height: 100vh;
 }
 
+.history-banner {
+    background-image: url(img/history/banner2.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: black;
+    .my-2 {
+        border-bottom: 1px solid black;
+    }
+    .more {
+        color: #F1CFA1;
+    }
+}
+
 .timeline {
     margin-left: 10vw;
 }
 
 .box {
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    background-color: red;
+    background-color: rgb(173, 126, 126);
     margin: 20px;
     background-size: cover;
     background-position: center center;
     border: 1px solid rgb(34, 34, 34);
     box-shadow: 0 0 1em rgb(0, 0, 0);
     z-index: 2;
+    &:hover {
+        transform: scale(1.4);
+        transition: .5s;
+    }
 }
 
 .hisText {
@@ -29,17 +46,25 @@ body {
     position: relative;
     z-index: 3;
     border: 1px solid grey;
-    box-shadow: 0 0 1em rgb(0, 0, 0);
+    box-shadow: 0 0 .5em rgb(0, 0, 0);
     padding: 15px 20px;
     margin: 20px;
+    text-align: center;
+    
+    .year {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+    }
     img {
         width: 33%;
-        margin: 0 33%;
+        max-width: 50px;
     }
-    p {
+    article {
         text-align: justify;
     }
 }
+
+
 
 .hisImg {
     display: flex;
@@ -62,20 +87,9 @@ body {
     }
 }
 
-.text-right {
-    left: 12vw;
-}
-.text-left {
-    left: 0;
-}
-
 
 #img1 {background-image: url(img/history/otto-the-great.jpg)}
 
-
-.timeline .hisText:nth-child(odd){
-    text-align: right;
-}
 
 connection {
     position: relative; 
@@ -86,13 +100,9 @@ connection {
 
 @media screen and (max-width: 991px){
     .text-right {
-        top: 15%;
-        left: 20px;
         text-align: center !important;
     }
     .text-left {
-        top: 0vw;
-        left: 90px;
         text-align: center !important;
     }
 }
@@ -106,16 +116,6 @@ connection {
         .box {
             margin: 10px auto;
         }
-    }
-    .text-right {
-        top: 50px;
-        left: 35vw;
-        padding-left: 20% !important;
-    }
-    .text-left {
-        top: 50px;
-        left: 0;
-        padding-right: 20% !important;
     }
 }
 
