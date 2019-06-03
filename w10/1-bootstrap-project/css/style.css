@@ -7,21 +7,7 @@ body {
 
 .history-banner {
   background-image: url(img/history/banner2.jpg);
-  background-size: cover;
-  background-position: center center;
   color: black;
-}
-
-.history-banner h1 {
-  padding-top: 30px;
-}
-
-.history-banner .my-2 {
-  border-bottom: 1px solid black;
-}
-
-.history-banner .more {
-  color: #F1CFA1;
 }
 
 .timeline {
@@ -138,11 +124,9 @@ connection {
 }
 
 .food-banner {
-  background-color: #cac8b5;
   background-image: url(img/food/vegetables-1212845.jpg);
   background-position: center top;
   background-size: cover;
-  background-blend-mode: overlay;
 }
 
 .food-banner h1 {
@@ -304,6 +288,45 @@ connection {
   position: relative;
 }
 
+.city-banner {
+  background-image: url(img/cities/hamburg2.jpeg);
+}
+
+.city-banner p {
+  background-color: white;
+  width: 50%;
+  margin: 0 auto 1px;
+}
+
+#cityCarousel .carousel-item {
+  background-color: grey;
+  width: 100vw;
+}
+
+#cityCarousel .carousel-control-next, #cityCarousel .carousel-control-prev {
+  width: 5%;
+}
+
+#cityCarousel h2 {
+  padding-left: 26%;
+}
+
+#cityCarousel .row1 {
+  width: 100%;
+  height: 50vh;
+}
+
+.imgCol {
+  position: relative;
+  top: -50px;
+}
+
+#berlinImg {
+  background-image: url(img/cities/berlin1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
 .germany-banner {
   background-color: #aeb4b6;
   background-image: url(img/germany1.jpg);
@@ -337,6 +360,32 @@ connection {
           transform: scale(1.2);
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+.myBanner {
+  background-size: cover;
+  background-position: center center;
+  background-color: #bbb8b8;
+  background-blend-mode: overlay;
+}
+
+.myBanner h1 {
+  padding-top: 60px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.myBanner .myhr {
+  border-color: black;
+  margin-top: 0;
+}
+
+.myBanner p {
+  background-color: rgba(255, 255, 255, 0.726);
+  width: 70%;
+  margin: 0 auto 1px;
 }
 
 @-webkit-keyframes introAni {
@@ -437,34 +486,33 @@ connection {
   width: 50%;
 }
 
-.carousel h3,
-.carousel p {
+#mainCarousel h3,
+#mainCarousel p {
   font-family: 'Courier New', Courier, monospace;
   color: white;
   background-color: black;
 }
 
-.carousel h3 {
+#mainCarousel h3 {
   margin-bottom: 0;
 }
 
-.carousel .imgWrap {
-  background-color: green;
+#mainCarousel .imgWrap {
   width: 90vw;
   height: 50vw;
   background-position: center center;
   background-size: cover;
 }
 
-.carousel #carImg1 {
+#mainCarousel #carImg1 {
   background-image: url(img/fun/beer.jpeg);
 }
 
-.carousel #carImg2 {
+#mainCarousel #carImg2 {
   background-image: url(img/fun/bread.jpeg);
 }
 
-.carousel #carImg3 {
+#mainCarousel #carImg3 {
   background-image: url(img/fun/car.jpeg);
 }
 
@@ -497,6 +545,19 @@ connection {
 
 .toTop p {
   font-size: 1em;
+}
+
+.flexCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .smallInfo {

@@ -16,7 +16,6 @@ window.onresize = function () {
 };
 
 
-
 function scrollBackgroundNav() {
     viewportWidth = document.documentElement.clientWidth;
     if (viewportWidth > 768) {
