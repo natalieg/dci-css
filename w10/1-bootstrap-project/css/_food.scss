@@ -27,6 +27,18 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    #titleBasket {
+        text-align: center;
+        position: relative;
+        color: rgba(226, 157, 126, 0.726);
+        font-weight: 100;
+        top: -160px;
+        transform: scale(2);
+        transition: 1s;
+        h2 {
+            margin-bottom: 0;
+        }
+    }
     .circle {
         height: 200px;
         width: 200px;
@@ -46,6 +58,16 @@
         &:hover {
             transform: scale(1.3);
             cursor: pointer;
+        }
+    }
+}
+
+.foodMobile {
+    text-align: center;
+    // background-color: rgb(240, 240, 197);
+    .card-header {
+        img {
+            width: 30%;
         }
     }
 }

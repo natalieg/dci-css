@@ -8,6 +8,7 @@ var grapes = document.getElementById("grapes");
 var potatoes = document.getElementById("potatoes");
 var strawberry = document.getElementById("strawberry");
 var grain = document.getElementById("grain");
+var title = document.getElementById("titleBasket");
 var originalPositionLeft = "45%"
 var originalPositionTop = "45%"
 var active = false;
@@ -15,17 +16,19 @@ var active = false;
 basket.onclick = function(){
     console.log("hi");
     if(!active){
-        changePosition(apple, "260px", "10vw");
+        title.style.opacity = "0";
+        changePosition(apple, "260px", "15%");
         changePosition(barley, "120px", "4vw");
-        changePosition(cabbage, "40px", "22vw");
-        changePosition(carrot, "40px", "45vw");
-        changePosition(corn, "80px", "65vw");
+        changePosition(cabbage, "40px", "30%");
+        changePosition(carrot, "40px", "55%");
+        changePosition(corn, "70px", "70%");
         changePosition(grapes, "45%", "80%");
         changePosition(potatoes, "70%", "70%");
         changePosition(strawberry, "75%", "50%");
         changePosition(grain, "75%", "25%");
         active = true;
     } else {
+        title.style.opacity = "1";
         resetPosition(apple);
         resetPosition(barley);
         resetPosition(cabbage);

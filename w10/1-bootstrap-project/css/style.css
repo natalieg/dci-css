@@ -169,6 +169,22 @@ connection {
   position: relative;
 }
 
+.foodInteractive #titleBasket {
+  text-align: center;
+  position: relative;
+  color: rgba(226, 157, 126, 0.726);
+  font-weight: 100;
+  top: -160px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.foodInteractive #titleBasket h2 {
+  margin-bottom: 0;
+}
+
 .foodInteractive .circle {
   height: 200px;
   width: 200px;
@@ -198,6 +214,14 @@ connection {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   cursor: pointer;
+}
+
+.foodMobile {
+  text-align: center;
+}
+
+.foodMobile .card-header img {
+  width: 30%;
 }
 
 .fruit {
@@ -490,6 +514,12 @@ connection {
   }
   .germany-banner img {
     width: 10vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hide-big {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
