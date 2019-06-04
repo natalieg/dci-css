@@ -360,6 +360,31 @@ connection {
   width: 100%;
 }
 
+.gallery-banner {
+  background-image: url(img/gallery/h19.jpg);
+}
+
+.gallery img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  -webkit-transition: .2s;
+  transition: .2s;
+  padding: 5px 0;
+}
+
+.gallery img:active {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  z-index: 10;
+}
+
+.galleryContent {
+  max-width: 1600px !important;
+  margin: 0 auto 50px;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }

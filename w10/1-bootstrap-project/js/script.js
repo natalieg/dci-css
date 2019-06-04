@@ -1,9 +1,6 @@
 
 var viewportWidth = document.documentElement.clientWidth;
 var docTopPosition = true;
-var navBarColor = document.getElementById("mainNav").style.backgroundColor;
-var navBarColorInvisible = "rgba(255, 255, 255, 0)";
-var navBarColorVisible = "#FFD038";
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function () {
@@ -39,7 +36,6 @@ function changeColor() {
         console.log("Im at the top and Im big");
     } else {
         document.getElementById("mainNav").style.backgroundColor = "#FFD038";
-
         console.log("Im at the top and Im small");
     }
 };
