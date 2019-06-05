@@ -50,10 +50,26 @@
     background-position: center center;
 }
 
+#imgMunich {
+    background-image: url(img/cities/munich-2668812_1920.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#imgCologne {
+    background-image: url(img/cities/cologne-cathedral-1507852_1920.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
 .sideImg {
     width: 20%;
     float: right;
     margin-left: 30px;
+}
+
+.city-section {
+    padding-top: 130px;
 }
 
 .city-card-deck {
