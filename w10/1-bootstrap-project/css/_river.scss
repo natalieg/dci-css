@@ -1,0 +1,28 @@
+#riverSideImg {
+    width: 100%;
+}
+
+.riverContainer {
+    margin: 0 auto;
+    .germany {
+        margin: inherit;
+        text-align: center;
+        position: relative;
+    }
+}
+
+#germanyImg {
+    width: 500px;
+}
+
+#elbeImg {
+    position: absolute;
+    top: 82px;
+    left: 450px;
+    width: 312px;
+    transition: .2s;
+    pointer-events: visible;
+    &:hover {
+        transform: scale(1.02);
+    }
+}
