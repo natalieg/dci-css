@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Gallery</title>
+    <title>Contact</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -51,75 +51,39 @@
         </div>
     </nav>
 
-    <!-- Banner -->
-    <div class="gallery-banner myBanner jumbotron jumbotron-fluid text-center">
-        <div class="container">
-            <h1>Gallery</h1>
-            <hr class="myhr">
-            <p class="lead">images from beautiful places in Germany</p>
-            <p class="more">many cities have castles, some have none</p>
-        </div>
-    </div>
-
     <!-- All content is in here -->
-    <div id="galleryContent " class="galleryContent content container-fluid p-5">
-
-        <div class="gallery row">
-            <!-- Horizontal -->
-            <div class="p-1 col-6 col-md-2">
-                <img src="css/img/gallery/h1.jpg" alt="">
-                <img src="css/img/gallery/h4.jpg" alt="">
-                <img src="css/img/gallery/h5.jpg" alt="">
-                <img src="css/img/gallery/h6.jpg" alt="">
-                <img src="css/img/gallery/h12.jpg" alt="">
-                <img src="css/img/gallery/h13.jpg" alt="">
-                <img src="css/img/gallery/h16.jpg" alt="">
-                <img src="css/img/gallery/h20.jpg" alt="">
+    <form id="mainContent" class="content container-fluid p-5" action="">
+        <div class="contact-form form col-12 col-md-9 col-lg-6">
+            <div class="form-group">
+                <img src="css/img/undraw_reading_0re12.svg" alt="">
+                <h2 class="text-center pt-3">Write us!</h2>
+                <p class="text-center">We love to hear from you :)</p>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="" aria-describedby="helpId">
             </div>
-            <!-- Verical -->
-            <div class="p-1 col-6 col-md-2">
-                    <img src="css/img/gallery/v1.jpg" alt="">
-                    <img src="css/img/gallery/v3.jpg" alt="">
-                    <img src="css/img/gallery/v5.jpg" alt="">
-                    <img src="css/img/gallery/v7.jpg" alt="">
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input required type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
+                    placeholder="">
+                <small id="emailHelpId" class="form-text text-muted">We will never share your adress with
+                    anyone!</small>
             </div>
-            <!-- Horizontal -->
-            <div class="p-1 col-12 col-md-4">
-                    <img src="css/img/gallery/h2.jpg" alt="">
-                    <img src="css/img/gallery/h7.jpg" alt="">
-                    <img src="css/img/gallery/h8.jpg" alt="">
-                    <img src="css/img/gallery/h17.jpg" alt="">
+            <div class="form-group">
+                <label for="area">Your Message</label>
+                <textarea class="form-control" name="area" id="area" rows="3"></textarea>
             </div>
-            <!-- Vertical -->
-            <div class="p-1 col-6 col-md-2">
-                    <img src="css/img/gallery/v2.jpg" alt="">
-                    <img src="css/img/gallery/v4.jpg" alt="">
-                    <img src="css/img/gallery/v6.jpg" alt="">
-                    <img src="css/img/gallery/v8.jpg" alt="">
-            </div>
-            <!-- Horizontal -->
-            <div class="p-1 col-6 col-md-2">
-                    <img src="css/img/gallery/h3.jpg" alt="">
-                    <img src="css/img/gallery/h9.jpg" alt="">
-                    <img src="css/img/gallery/h10.jpg" alt="">
-                    <img src="css/img/gallery/h11.jpg" alt="">
-                    <img src="css/img/gallery/h14.jpg" alt="">
-                    <img src="css/img/gallery/h15.jpg" alt="">
-                    <img src="css/img/gallery/h18.jpg" alt="">
-                    <img src="css/img/gallery/h19.jpg" alt="">
-            </div>
+            <button type="submit" class="btn btn-primary">Send my Message!</button>
         </div>
-        <!-- Credit -->
-    </div>
+    </form>
     <!-- End Content -->
 
-         <!-- To Top -->
-         <div class="toTop">
-                <a href="#">
-                    <i class="fas fa-arrow-circle-up"></i>
-                    <p>Back to Top</p>
-                </a>
-            </div>
+    <!-- To Top -->
+    <div class="toTop">
+        <a href="#">
+            <i class="fas fa-arrow-circle-up"></i>
+            <p>Back to Top</p>
+        </a>
+    </div>
 
     <!-- Footer -->
     <ul class="footer nav navbar navbar-light justify-content-center">
@@ -128,7 +92,7 @@
             <a class="nav-link" href="#">Link</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="form.html">Contact</a>
+            <a class="nav-link" href="#">Contact</a>
         </li>
     </ul>
 

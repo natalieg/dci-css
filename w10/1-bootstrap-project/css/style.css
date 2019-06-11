@@ -457,6 +457,21 @@ connection {
           transform: scale(1.02);
 }
 
+.contact-form {
+  background-color: #a2a9d1;
+  margin: 50px auto 10px;
+  padding: 20px;
+}
+
+.contact-form img {
+  width: 60%;
+  margin: 0 20%;
+}
+
+.contact-form .form-group {
+  padding-top: 10px;
+}
+
 html {
   scroll-behavior: smooth;
 }
