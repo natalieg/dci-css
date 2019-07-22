@@ -111,6 +111,9 @@ a {
 
 /* Images of Websites */
 
+#w6-stars{background-image: url(img/overviewPreview/js/9-stars.jpg);
+    background-position: left }
+#w6-pet{background-image: url(img/overviewPreview/js/8-pets.jpg);}
 #w5-pop{background-image: url(img/overviewPreview/js/7-minidivfun.jpg);}
 #w5-append{background-image: url(img/overviewPreview/js/6-append.jpg);}
 #w5-todo{background-image: url(img/overviewPreview/js/5-todo.jpg);}
